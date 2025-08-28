@@ -12,72 +12,79 @@
 </head>
 <body>
 
-  <!-- 导航栏 -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
 
-      <a class="navbar-brand" href="/index.html">
-          <img src="/static/images/logo_.png" alt="AlphaLab Logo">
-      </a>
+    <a class="navbar-brand" href="/index.html">
+        <img src="/static/images/logo_.png" alt="AlphaLab Logo">
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">
-              <i class="fa-solid fa-house"></i>
-              <span i18n="home">home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/news.html">
-              <i class="fa-solid fa-newspaper"></i>
-              <span i18n="news">news</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/people.html">
-              <i class="fa-solid fa-user"></i>
-              <span i18n="people">people</span>
-            </a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="/publications">Publications</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="/gallery.html">
-              <i class="fa-solid fa-images"></i>
-              <span i18n="gallery">gallery</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/resources.html">
-              <i class="fa-solid fa-file-powerpoint"></i>
-              <span i18n="resources">resources</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact.html">
-              <i class="fa-solid fa-envelope"></i>
-              <span i18n="contact">contact</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <div class="nav-link" id="language-toggle" data-default-lang="zh">
-              <i class="fa-solid fa-language"></i>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">
+            <i class="fa-solid fa-house"></i>
+            <span i18n="home">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/news.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <span i18n="news">news</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/people.html">
+            <i class="fa-solid fa-user"></i>
+            <span i18n="people">people</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery.html">
+            <i class="fa-solid fa-images"></i>
+            <span i18n="gallery">gallery</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resources.html">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <span i18n="resources">resources</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            <span i18n="contact">contact</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
 
-  <!-- 主体内容 -->
-  <div>
+    <!-- <div class="nav-item">
+      <div class="nav-link" id="language-toggle" data-default-lang="zh">
+        <i class="fa-solid fa-language"></i>
+      </div>
+    </div> -->
+
+  </div>
+</nav>
+
+<!-- 语言切换按钮 - 固定在右下角 -->
+<div class="language-toggle-fixed" id="language-toggle" data-default-lang="zh">
+  <i class="fa-solid fa-language"></i>
+</div>
+
+<!-- 主体内容 -->
+<div>
     
 <!-- 轮播图部分 -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

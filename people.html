@@ -12,19 +12,20 @@
 </head>
 <body>
 
-  <!-- 导航栏 -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-
+  
       <a class="navbar-brand" href="/index.html">
           <img src="/static/images/logo_.png" alt="AlphaLab Logo">
       </a>
-
+  
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -66,15 +67,22 @@
               <span i18n="contact">contact</span>
             </a>
           </li>
-          <li class="nav-item">
-            <div class="nav-link" id="language-toggle" data-default-lang="zh">
-              <i class="fa-solid fa-language"></i>
-            </div>
-          </li>
         </ul>
       </div>
+  
+      <!-- <div class="nav-item">
+        <div class="nav-link" id="language-toggle" data-default-lang="zh">
+          <i class="fa-solid fa-language"></i>
+        </div>
+      </div> -->
+  
     </div>
   </nav>
+  
+  <!-- 语言切换按钮 - 固定在右下角 -->
+  <div class="language-toggle-fixed" id="language-toggle" data-default-lang="zh">
+    <i class="fa-solid fa-language"></i>
+  </div>
 
   <!-- 主体内容 -->
   <div>

@@ -42,25 +42,234 @@ h1 {
     transform: scale(1.1);
 }
 
-
-.navbar{
+.navbar {
   height: var(--navbar-height);
   background-color: rgba(174, 224, 233, 0.8);
   border-radius: 0px 0px 10px 18px;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0; /* 默认在顶部 */
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
+
 .navbar-nav .nav-link:hover {
-  /* color: #37ac9a !important;  Mars Green color */
   color: gold !important;
   font-weight: bold;
   background-color: rgb(19, 104, 117);
   border-radius: 10px;
 }
+
 .navbar-brand img {
   margin-left: 15px;
   height: 64px;
   margin-right: 8px;
 }
+
 .navbar-nav .nav-link {
   margin-left: 20px;
   font-size: var(--navbar-link-font-size);
+}
+
+/* 响应式导航栏 - 小屏幕设备 */
+@media screen and (max-width: 767px) {
+  .navbar {
+      height: var(--navbar-height);
+      background-color: rgba(174, 224, 233, 0.95);
+      border-radius: 10px 10px 0px 0px; /* 改为顶部圆角 */
+      position: fixed;
+      bottom: 0; /* 小屏幕时固定在底部 */
+      top: auto; /* 取消顶部定位 */
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+  }
+  
+  .navbar-collapse {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(174, 224, 233, 0.95);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: 0.3s ease;
+      z-index: 1001; /* 比navbar更高的层级 */
+  }
+  
+  .navbar-collapse.show {
+      bottom: 0;
+  }
+  
+  .navbar-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      text-align: center;
+  }
+  
+  .navbar-nav .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .navbar-nav .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.875rem;
+      color: #2C3E50;
+      font-weight: 500;
+      margin: 0;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link i {
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: gold !important;
+      background-color: rgb(19, 104, 117);
+      transform: translateY(-2px);
+  }
+  
+  /* 显示汉堡菜单按钮 */
+  .navbar-toggler {
+      display: block;
+      border: none;
+      background: transparent;
+      font-size: 1.5rem;
+      color: #2C3E50;
+      cursor: pointer;
+      padding: 0.5rem;
+  }
+  
+  /* 调整页面内容，避免被底部navbar遮挡 */
+  body {
+      padding-bottom: calc(var(--navbar-height) + 20px);
+      padding-top: 20px; /* 小屏幕时减少顶部padding */
+  }
+  
+  .page-title {
+      margin-top: 20px; /* 小屏幕时减少顶部margin */
+  }
+}
+
+/* 中等屏幕设备 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+      position: fixed;
+      top: 0; /* 中等屏幕时保持在顶部 */
+      bottom: auto;
+      border-radius: 0px 0px 10px 18px;
+  }
+  
+  .navbar-nav .nav-link {
+      margin-left: 15px;
+      font-size: 1.1rem;
+  }
+  
+  body {
+      padding-top: calc(var(--navbar-height) + 20px);
+      padding-bottom: 20px;
+  }
+  
+  .page-title {
+      margin-top: calc(var(--navbar-height) + 20px);
+  }
+}
+
+/* 大屏幕设备保持原有布局 */
+@media screen and (min-width: 1025px) {
+  .navbar {
+      position: fixed;
+      top: 0; /* 大屏幕时保持在顶部 */
+      bottom: auto;
+      border-radius: 0px 0px 10px 18px;
+  }
+  
+  .navbar-nav .nav-link {
+      margin-left: 20px;
+      font-size: var(--navbar-link-font-size);
+  }
+  
+  body {
+      padding-top: calc(var(--navbar-height) + 20px);
+      padding-bottom: 20px;
+  }
+  
+  .page-title {
+      margin-top: calc(var(--navbar-height) + 20px);
+  }
+}
+
+/* 固定在右下角的语言切换按钮 */
+.language-toggle-fixed {
+  position: fixed;
+  bottom: 100px; /* 距离底部100px，避免被底部navbar遮挡 */
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(174, 224, 233, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(19, 104, 117, 0.3);
+}
+
+.language-toggle-fixed:hover {
+  background-color: rgba(19, 104, 117, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.language-toggle-fixed i {
+  font-size: 1.5rem;
+  color: #2C3E50;
+  transition: color 0.3s ease;
+}
+
+.language-toggle-fixed:hover i {
+  color: gold;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 767px) {
+  .language-toggle-fixed {
+    bottom: 90px; /* 小屏幕时稍微调整位置 */
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .language-toggle-fixed i {
+    font-size: 1.3rem;
+  }
+}
+
+/* 超小屏幕的额外调整 */
+@media screen and (max-width: 480px) {
+  .language-toggle-fixed {
+    bottom: 85px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .language-toggle-fixed i {
+    font-size: 1.2rem;
+  }
 }

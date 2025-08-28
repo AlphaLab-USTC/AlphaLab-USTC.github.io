@@ -176,3 +176,42 @@
 .achievements li, .highlights li {
     margin-bottom: 3px;
 }
+
+
+
+/* 响应式设计 - 小屏幕设备 */
+@media (max-width: 768px) {
+    .person-card {
+        width: calc(98%); /* 小屏幕时每行一个卡片 */
+    }
+    
+    .advisor-card {
+        width: calc(98%); /* 确保advisor卡片也是全宽 */
+    }
+    
+    .people-list {
+        gap: 15px; /* 减小间距 */
+    }
+}
+
+/* 中等屏幕设备 */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .person-card {
+        width: calc(98%); /* 中等屏幕时每行一个卡片 */
+    }
+    
+    .advisor-card {
+        width: calc(98%);
+    }
+}
+
+/* 大屏幕设备保持原有布局 */
+@media (min-width: 1025px) {
+    .person-card {
+        width: calc(50% - 20px); /* 大屏幕时每行两个卡片 */
+    }
+    
+    .advisor-card {
+        width: calc(100% - 40px);
+    }
+}
