@@ -40,8 +40,12 @@
     transition: transform 0.3s ease;
 }
 
+.news-image-container img:last-child {
+    margin-right: 0;
+}
+
 .news-image-container img:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 /* 右侧文字区域 */
