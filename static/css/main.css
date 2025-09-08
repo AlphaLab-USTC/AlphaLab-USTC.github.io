@@ -27,7 +27,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: var(--navbar-height);
+  margin-top: 10px;
   height: 3.1rem;
 }
 
@@ -157,10 +157,6 @@ h1 {
       padding-bottom: calc(var(--navbar-height) + 20px);
       padding-top: 20px; /* 小屏幕时减少顶部padding */
   }
-  
-  .page-title {
-      margin-top: 20px; /* 小屏幕时减少顶部margin */
-  }
 }
 
 /* 中等屏幕设备 */
@@ -180,10 +176,6 @@ h1 {
   body {
       padding-top: calc(var(--navbar-height) + 20px);
       padding-bottom: 20px;
-  }
-  
-  .page-title {
-      margin-top: calc(var(--navbar-height) + 20px);
   }
 }
 
@@ -206,9 +198,6 @@ h1 {
       padding-bottom: 20px;
   }
   
-  .page-title {
-      margin-top: calc(var(--navbar-height) + 20px);
-  }
 }
 
 /* 固定在右下角的语言切换按钮 */

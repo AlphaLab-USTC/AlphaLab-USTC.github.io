@@ -19,7 +19,7 @@
     flex-direction: column; /* Change to column to stack items vertically */
     background-color: white;
     padding: 20px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
@@ -81,13 +81,14 @@
 
 .person-card {
     display: flex;
+    flex-direction: column; /* 纵向堆叠：image-container 在上，info-container 在下 */
     background-color: white;
     padding: 20px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: center;
-    width: calc(50% - 20px); /* Adjust width to fit two cards per row */
+    align-items: flex-start; /* 左对齐内容 */
+    width: calc(50% - 20px); /* 默认：两列 */
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -126,13 +127,28 @@
 }
 .image-container {
     flex: 0 0 auto;
-    margin-right: 20px;
+    margin-right: 0;
+    margin-bottom: 12px; /* 与下方 info-container 留间距 */
+    display: flex;
+    align-items: center;
 }
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+}
+.image-container .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px; /* 紧贴图片，右侧留少量间距 */
+}
+.image-container .links a {
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+.image-container .links a:last-child {
+    margin-bottom: 0;
 }
 .info-container {
     flex: 1 1 auto;
@@ -179,8 +195,8 @@
 
 
 
-/* 响应式设计 - 小屏幕设备 */
-@media (max-width: 768px) {
+/* 响应式设计 - 最窄设备：1列 */
+@media (max-width: 576px) {
     .person-card {
         width: calc(98%); /* 小屏幕时每行一个卡片 */
     }
@@ -194,10 +210,10 @@
     }
 }
 
-/* 中等屏幕设备 */
+/* 中等屏幕设备：3列 */
 @media (max-width: 1024px) and (min-width: 769px) {
     .person-card {
-        width: calc(98%); /* 中等屏幕时每行一个卡片 */
+        width: calc(33.333% - 15px); /* 三列布局 */
     }
     
     .advisor-card {
@@ -205,12 +221,12 @@
     }
 }
 
-/* 大屏幕设备保持原有布局 */
+/* 大屏幕设备布局：每行四个卡片 */
 @media (min-width: 1025px) {
     .person-card {
-        width: calc(50% - 20px); /* 大屏幕时每行两个卡片 */
+        width: calc(25% - 15px); /* 四列布局，结合父容器 gap 调整 */
     }
-    
+
     .advisor-card {
         width: calc(100% - 40px);
     }
