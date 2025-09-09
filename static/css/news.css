@@ -1,4 +1,8 @@
 /* 整个新闻列表容器 */
+body {
+    padding-top: calc(var(--navbar-height) + 20px);
+}
+
 #news-container {
     margin: 0 auto;
     padding: 0 15px;

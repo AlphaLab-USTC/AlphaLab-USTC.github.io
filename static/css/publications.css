@@ -1,3 +1,8 @@
+body {
+    padding-top: calc(var(--navbar-height) + 20px);
+}
+
+
 /* 整个新闻列表容器 */
 #publication-container {
     margin: 0 auto;

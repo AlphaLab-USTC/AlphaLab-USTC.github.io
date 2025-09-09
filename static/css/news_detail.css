@@ -1,3 +1,7 @@
+body {
+  padding-top: calc(var(--navbar-height) + 20px);
+}
+
 .news-article {
     background: #fdfdfd;
     border: 1px solid #ddd;

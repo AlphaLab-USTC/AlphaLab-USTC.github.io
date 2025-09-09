@@ -151,12 +151,6 @@ h1 {
       cursor: pointer;
       padding: 0.5rem;
   }
-  
-  /* 调整页面内容，避免被底部navbar遮挡 */
-  body {
-      padding-bottom: calc(var(--navbar-height) + 20px);
-      padding-top: 20px; /* 小屏幕时减少顶部padding */
-  }
 }
 
 /* 中等屏幕设备 */
@@ -174,7 +168,6 @@ h1 {
   }
   
   body {
-      padding-top: calc(var(--navbar-height) + 20px);
       padding-bottom: 20px;
   }
 }
@@ -194,7 +187,6 @@ h1 {
   }
   
   body {
-      padding-top: calc(var(--navbar-height) + 20px);
       padding-bottom: 20px;
   }
   
