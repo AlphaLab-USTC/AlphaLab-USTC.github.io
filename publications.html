@@ -1,0 +1,260 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AlphaLab</title>
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <!-- 引入 Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="/index.html">
+        <img src="/static/images/logo_.png" alt="AlphaLab Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">
+            <i class="fa-solid fa-house"></i>
+            <span i18n="home">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/news.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <span i18n="news">news</span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/publications.html">
+                <i class="fa-solid fa-file-alt"></i>
+                <span i18n="publications">Publications</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/people.html">
+            <i class="fa-solid fa-user"></i>
+            <span i18n="people">people</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery.html">
+            <i class="fa-solid fa-images"></i>
+            <span i18n="gallery">gallery</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resources.html">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <span i18n="resources">resources</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            <span i18n="contact">contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="nav-item">
+      <div class="nav-link" id="language-toggle" data-default-lang="zh">
+        <i class="fa-solid fa-language"></i>
+      </div>
+    </div> -->
+
+  </div>
+</nav>
+
+<!-- 语言切换按钮 - 固定在右下角 -->
+<div class="language-toggle-fixed" id="language-toggle" data-default-lang="en">
+  <i class="fa-solid fa-language"></i>
+</div>
+
+  <!-- 主体内容 -->
+  <div>
+    
+<link rel="stylesheet" href="/static/css/publications.css">
+
+<div class="container">
+  <div class="page-title">
+    <h1 i18n="publications">PUBLICATIONS</h1>
+  </div>
+  <div id="publication-container">
+
+
+
+    <div class="publication-item">
+      
+      <div class="publication-content">
+        <h2>
+          Alphafuse: Learn id embeddings for sequential recommendation in null space of language embeddings
+        </h2>
+        <div class="author-list">
+          <span class="author-date">2025</span>
+          <span class="author-names">Guoqing Hu, An Zhang*, Shuo Liu, Zhibo Cai, Xun Yang, Xiang Wang</span>
+          <span class="author-venue">SIGIR 2025</span>
+        </div>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3726302.3729894" class="publication-link" target="_blank">
+            <i class="fas fa-file-alt"></i> Paper
+          </a>
+        </div>
+      </div>
+      <div class="publication-image-container">
+        <img src="/static/images/publications/sigir-hgq.png" alt="Alphafuse SIGIR 2025">
+      </div>
+    </div>
+
+
+    <div class="publication-item">
+      
+      <div class="publication-content">
+        <h2>
+            LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation
+        </h2>
+        <div class="author-list">
+          <span class="author-date">2025</span>
+          <span class="author-names">Yingzhi He, Xiaohao Liu, An Zhang*, Yunshan Ma, Tat-Seng Chua</span>
+          <span class="author-venue">SIGKDD 2025</span>
+        </div>
+        <div class="publication-links">
+          <a href="https://dl.acm.org/doi/10.1145/3711896.3737029" class="publication-link" target="_blank">
+            <i class="fas fa-file-alt"></i> Paper
+          </a>
+        </div>
+      </div>
+      <div class="publication-image-container">
+        <img src="/static/images/publications/llm2rec.png" alt="LLM2Rec">
+      </div>
+    </div>
+
+    
+      <div class="publication-item">
+        <div class="publication-content">
+          <h2>
+            Preference Diffusion for Recommendation
+          </h2>
+          <div class="author-list">
+            <span class="author-date">2024</span>
+            <span class="author-names">Shuo Liu, An Zhang*, Guoqing Hu, Hong Qian, Tat-Seng Chua</span>
+            <span class="author-venue">ICLR 2025</span>
+          </div>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2410.13117" class="publication-link" target="_blank">
+              <i class="fas fa-file-alt"></i> Paper
+            </a>
+          </div>
+        </div>
+        <div class="publication-image-container">
+          <img src="/static/images/publications/diff4rec.png" alt="Preference Diffusion for Recommendation">
+        </div>
+      </div>
+  
+  
+      <div class="publication-item">
+        
+        <div class="publication-content">
+          <h2>
+            Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment
+          </h2>
+          <div class="author-list">
+            <span class="author-date">2024</span>
+            <span class="author-names">Chenhang Cui, An Zhang*, Yiyang Zhou, Zhaorun Chen, Gelei Deng, Huaxiu Yao, Tat-Seng Chua</span>
+            <span class="author-venue">ICLR 2025</span>
+          </div>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2410.14148" class="publication-link" target="_blank">
+              <i class="fas fa-file-alt"></i> Paper
+            </a>
+          </div>
+        </div>
+        <div class="publication-image-container">
+          <img src="/static/images/publications/fisao.png" alt="Fine-Grained Verifiers">
+        </div>
+      </div>
+
+
+    <div class="publication-item">
+      
+      <div class="publication-content">
+        <h2>
+            Language Representations Can be What Recommenders Need: Findings and Potentials
+        </h2>
+        <div class="author-list">
+          <span class="author-date">2024</span>
+          <span class="author-names">Leheng Sheng, An Zhang*, Yi Zhang, Yuxin Chen, Xiang Wang, Tat-Seng Chua</span>
+          <span class="author-venue">ICLR 2025 (Oral)</span>
+        </div>
+        <div class="publication-links">
+          <a href="https://arxiv.org/abs/2407.05441" class="publication-link">
+            <i class="fas fa-file-alt"></i> Paper
+          </a>
+          <a href="https://github.com/LehengTHU/AlphaRec" class="publication-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+      <div class="publication-image-container">
+        <img src="/static/images/news/alpharec2.png" alt="Physics of Language Models">
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+  </div>
+
+  <!-- 引入 Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script>
+    document.getElementById('language-toggle').addEventListener('click', function() {
+      const currentLang = this.getAttribute('data-default-lang');
+      const newLang = currentLang === 'zh' ? 'en' : 'zh'; // 切换语言
+      this.setAttribute('data-default-lang', newLang);
+      loadLanguage(newLang);
+    });
+
+    function loadLanguage(lang) {
+      const language = lang === 'en' ? 'en' : 'zh';
+      fetch(`/static/js/lang/${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+          document.querySelectorAll('[i18n]').forEach(element => {
+            const key = element.getAttribute('i18n');
+            if (data[key]) {
+              element.textContent = data[key];
+            }
+          });
+        })
+        .catch(error => console.error('Error loading language file:', error));
+    }
+
+    // Load default language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const defaultLang = document.getElementById('language-toggle').getAttribute('data-default-lang');
+      loadLanguage(defaultLang);
+    });
+  </script>
+</body>
+</html>
