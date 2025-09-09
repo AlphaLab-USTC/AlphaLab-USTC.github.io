@@ -1,8 +1,3 @@
-/* 整个新闻列表容器 */
-body {
-    padding-top: calc(var(--navbar-height) + 20px);
-}
-
 #news-container {
     margin: 0 auto;
     padding: 0 15px;
@@ -145,7 +140,8 @@ body {
 }
 
 /* 大屏幕下，两部分采用左右布局，且中间加分隔线 */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    body { padding-top: calc(var(--navbar-height) + 16px); }
     .news-item {
         display: grid;
         grid-template-columns: 1fr 2fr; /* 左边1份，右边2份 */
@@ -171,7 +167,10 @@ body {
 }
 
 /* 小屏幕下改为上下布局（纵向堆叠） */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+    body {
+        padding-bottom: calc(var(--navbar-height) + 20px);
+    }
     .news-item {
         display: flex;
         flex-direction: column;

@@ -28,7 +28,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  height: 3.1rem;
 }
 
 .page-title .dynamic-title {
@@ -73,7 +72,7 @@ h1 {
 }
 
 /* 响应式导航栏 - 小屏幕设备 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .navbar {
       height: var(--navbar-height);
       background-color: rgba(174, 224, 233, 0.95);
@@ -154,10 +153,10 @@ h1 {
 }
 
 /* 中等屏幕设备 */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
       position: fixed;
-      top: 0; /* 中等屏幕时保持在顶部 */
+      top: 0;
       bottom: auto;
       border-radius: 0px 0px 10px 18px;
   }
@@ -170,7 +169,7 @@ h1 {
   body {
       padding-bottom: 20px;
   }
-}
+} */
 
 /* 大屏幕设备保持原有布局 */
 @media screen and (min-width: 1025px) {

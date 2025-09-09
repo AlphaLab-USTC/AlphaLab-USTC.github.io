@@ -4,8 +4,6 @@
   --radius: 12px;
 }
 
-section.gallery { padding-top: calc(var(--navbar-height) + 16px); }
-
 /* 四列可换行网格（Flex 方案） */
 .gallery-grid {
   display: flex;
@@ -58,8 +56,13 @@ section.gallery { padding-top: calc(var(--navbar-height) + 16px); }
 }
 
 /* 响应式列数 */
-@media (max-width: 1024px) { :root { --cols: 3; } }
-@media (max-width: 767px)  { :root { --cols: 2; } }
+body { padding-top: calc(var(--navbar-height) + 16px); }
+@media (max-width: 1024px) { 
+  :root { --cols: 2; } 
+  body {
+    padding-bottom: calc(var(--navbar-height) + 20px);
+}
+}
 
 /* 无动画偏好 */
 @media (prefers-reduced-motion: reduce) {
