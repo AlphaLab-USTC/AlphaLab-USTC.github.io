@@ -187,14 +187,15 @@
       if (!grid) return;
     
       const items = Array.from(grid.querySelectorAll('.gallery-item'));
-    
+      const candidates = items.filter((_, idx) => ((idx + 1) % 4) !== 0);
+
       const EXPANDED_COUNT = 1;   // 每轮只放大1个
-      const CYCLE_MS     = 9000; // 放慢节奏：轮换间隔（毫秒）
+      const CYCLE_MS     = 6000; // 放慢节奏：轮换间隔（毫秒）
     
       let timer = null;
     
       function clearExpanded() {
-        items.forEach(el => el.classList.remove('expanded'));
+        candidates.forEach(el => el.classList.remove('expanded'));
       }
     
       function sampleOne(arr) {
@@ -205,7 +206,8 @@
     
       function tick() {
         clearExpanded();
-        const chosen = sampleOne(items);
+        // 过滤掉第 4、8、12... 个（1-based 可被 4 整除）
+        const chosen = sampleOne(candidates);
         // 同帧批量应用，减少回流
         requestAnimationFrame(() => chosen.forEach(el => el.classList.add('expanded')));
       }
