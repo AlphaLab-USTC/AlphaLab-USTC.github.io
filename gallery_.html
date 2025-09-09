@@ -1,0 +1,408 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AlphaLab</title>
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <!-- 引入 Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="/index.html">
+        <img src="/static/images/logo_.png" alt="AlphaLab Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">
+            <i class="fa-solid fa-house"></i>
+            <span i18n="home">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/news.html">
+            <i class="fa-solid fa-newspaper"></i>
+            <span i18n="news">news</span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/publications.html">
+                <i class="fa-solid fa-file-alt"></i>
+                <span i18n="publications">Publications</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/people.html">
+            <i class="fa-solid fa-user"></i>
+            <span i18n="people">people</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery.html">
+            <i class="fa-solid fa-images"></i>
+            <span i18n="gallery">gallery</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resources.html">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <span i18n="resources">resources</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            <span i18n="contact">contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="nav-item">
+      <div class="nav-link" id="language-toggle" data-default-lang="zh">
+        <i class="fa-solid fa-language"></i>
+      </div>
+    </div> -->
+
+  </div>
+</nav>
+  
+  <!-- 语言切换按钮 - 固定在右下角 -->
+  <div class="language-toggle-fixed" id="language-toggle" data-default-lang="en">
+    <i class="fa-solid fa-language"></i>
+  </div>
+
+  <!-- 主体内容 -->
+  <div>
+    
+<link rel="stylesheet" href="/static/css/gallery.css">
+
+<section class="gallery">
+    <!-- 标题 -->
+    <div class="page-title">
+        <h1 i18n="gallery">GALLERY</h1>
+    </div>
+
+    <div id="banner">
+        <div class="img-list img-wrapper">
+        
+            <div class="img-box" id="img-1">
+                <div class="info">
+                    <p>2024.10 Indonesia</p>
+                </div>
+                <img src="/static/images/gallery/2024.10_Indonesia.jpg" alt="2024.10 Indonesia" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-2">
+                <div class="info">
+                    <p>2023.10 Malaysia, Langkawi -2</p>
+                </div>
+                <img src="/static/images/gallery/2023.10_Malaysia_Langkawi_2.jpg" alt="2023.10 Malaysia, Langkawi -2" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-3">
+                <div class="info">
+                    <p>2023.11 NUS</p>
+                </div>
+                <img src="/static/images/gallery/2023.11_NUS.jpg" alt="2023.11 NUS" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-4">
+                <div class="info">
+                    <p>2024.12 NeurIPS_2</p>
+                </div>
+                <img src="/static/images/gallery/2024.12_NeurIPS_2.jpg" alt="2024.12 NeurIPS_2" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-5">
+                <div class="info">
+                    <p>2022.08 Singapore</p>
+                </div>
+                <img src="/static/images/gallery/2022.08_Singapore.jpg" alt="2022.08 Singapore" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-6">
+                <div class="info">
+                    <p>2024.10 Indonesia_2</p>
+                </div>
+                <img src="/static/images/gallery/2024.10_Indonesia_2.jpg" alt="2024.10 Indonesia_2" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-7">
+                <div class="info">
+                    <p>2024.12 Canada, Vancouver </p>
+                </div>
+                <img src="/static/images/gallery/2024.12_Canada_Vancouver.jpg" alt="2024.12 Canada, Vancouver" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-8">
+                <div class="info">
+                    <p>2024.12 NeurIPS</p>
+                </div>
+                <img src="/static/images/gallery/2024.12_NeurIPS.jpg" alt="2024.12 NeurIPS" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-9">
+                <div class="info">
+                    <p>2023.08 NUS Utown</p>
+                </div>
+                <img src="/static/images/gallery/2023.08_NUS_Utown.jpg" alt="2023.08 NUS Utown" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-10">
+                <div class="info">
+                    <p>2024.12.31 Singapore</p>
+                </div>
+                <img src="/static/images/gallery/2024.12.31_Singapore.jpg" alt="2024.12.31 Singapore" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-11">
+                <div class="info">
+                    <p>2023.12.31</p>
+                </div>
+                <img src="/static/images/gallery/2023.12.31.jpg" alt="2023.12.31" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+            <div class="img-box" id="img-12">
+                <div class="info">
+                    <p>2023.10 Malaysia, Langkawi</p>
+                </div>
+                <img src="/static/images/gallery/2023.10_Malaysia_Langkawi.jpg" alt="2023.10 Malaysia, Langkawi" 
+                style="background-image: url(/static/images/gallery/sea.jpg)">
+            </div>
+        
+        </div>
+    </div>
+
+
+    <div class="btn-group">
+        <button class="last btn">
+            <svg t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+        <button class="next btn">
+            <svg t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+    </div>
+
+</section>
+
+
+    
+
+<script>
+  const imgListOne = document.querySelector('.img-list')
+  // 获取图片类数组，并将其转化为数组
+  let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
+  const imgBoxCount = imgBoxList.length
+  const root = document.documentElement;
+  const btnGroup = document.querySelector('.btn-group')
+  const lastBtn = document.querySelector('.last')
+  const nextBtn = document.querySelector('.next')
+  const lastImgBox = imgBoxList[imgBoxList.length - 1]
+
+  // 获取--post-spacing和--post-size的值
+  const postSpacing = Number(getComputedStyle(root).getPropertyValue('--post-spacing').replace("vw", ""));
+  const postSize = Number(getComputedStyle(root).getPropertyValue('--post-size').replace("vw", ""));
+
+  // 根据图片的数量动态获取img-list的宽度
+  let imgListLength = (postSize + postSpacing) * imgBoxCount
+  console.log(imgListLength);
+  // 根据图片的数量动态获取img-box的宽度
+  const imgBoxLength = postSize + postSpacing
+
+  let index = 0
+  let indexOne = 1
+  let timer = null
+  let animationTime = 0.5
+
+  // 初始化数组中元素的的顺序，将最后一张图片放在第一位与html部分图片展示位置一致
+  imgBoxList.unshift(imgBoxList.pop())
+  // 设置imgListOne动画时间
+  imgListOne.style.transition = animationTime + 's ease'
+  // 设置按钮出现时间
+  setTimeout(function () {
+      btnGroup.style.opacity = '1'
+      btnGroup.style.bottom = '5%'
+  }, animationTime * 1000)
+  // 点击事件
+  function cilckFun(flag) {
+      //下一张 next
+      if (flag == 'next') {
+          index--
+          console.log(index);
+          // 因为右边没有显示的图片比较多，所以可以直接先整体向左移动
+          imgListOne.style.left = imgBoxLength * index + "vw";
+          setTimeout(function () {
+              imgListOne.style.transition = 'none'
+              // 当点击下一个累计达到图片数量时，相当于要回到原点，则重置变量和位置
+              if (Math.abs(index) == imgBoxCount) {
+                  index = 0
+                  imgListOne.style.left = 0
+                  imgBoxList.forEach(item => {
+                      if (item === lastImgBox) {
+                          item.style.transform = `translateX(-160.68vw)`
+                      } else {
+                          item.style.transform = 'none'
+                      }
+                  });
+              } else {
+                  // 当第一张图片为最后一个图片时，说明已经跑完了一轮，则将其放在最后的位置，初始状态其为-160.68vw
+                  if (imgBoxList[0] === lastImgBox) {
+                      lastImgBox.style.transition = 'none'
+                      lastImgBox.style.transform = 'translateX(0px)'
+                  } else if (index >= 0) {
+                      /*  
+                          这种情况是为了解决在点击完最后一个图片，再点击next时造成的bug问题，其实就是回退，再点击最后一个图片之前
+                          没有加transform属性，点击最后一个图片以后则添加了transform属性，再次点击next按钮后应该不加transform
+                      */
+                      imgBoxList[0].style.transform = 'none'
+                  } else {
+                      // 正常情况下，点击next，则将最左侧的图片移到最后
+                      imgBoxList[0].style.transform = 'translateX(160.68vw)'
+                  }
+              }
+              // 模拟移动情况，将最左侧的图片（元素）移动到最后
+              imgBoxList.push(imgBoxList.shift())
+          }, animationTime * 1000)
+      } else {
+          // 上一张 last
+          index++
+          console.log(index);
+          // 模拟移动情况，把最右侧的图片（元素）移动到最前
+          imgBoxList.unshift(imgBoxList.pop())
+          // 因为左侧图片只会有一张，所以需要先移动图片到左侧，再进行imgListOne的移到
+          if (imgBoxList[0] === lastImgBox && index != 0) {
+              // 当第一张图片为最后一个图片时，说明已经跑完了一轮，此时相对于一开始的位置为-321.36vw
+              imgBoxList[0].style.transform = 'translateX(-321.36vw)'
+          } else if (index < 0) {
+              // 这种情况与点击next按钮出现的回退现象一致
+              imgBoxList[0].style.transform = 'none'
+          } else {
+              // 正常情况下，点击last，则将最右侧的图片移到最前
+              imgBoxList[0].style.transform = 'translateX(-160.68vw)'
+          }
+          imgListOne.style.left = imgBoxLength * index + "vw";
+          lastImgBox.style.transition = 'none'
+          // 当点击下一个累计达到图片数量时，相当于要回到原点，则重置变量和位置
+          if (Math.abs(index) == imgBoxCount) {
+              index = 0
+              setTimeout(function () {
+                  imgListOne.style.transition = 'none'
+                  imgListOne.style.left = 0
+                  imgBoxList.forEach(item => {
+                      if (item === lastImgBox) {
+                          item.style.transform = 'translateX(-160.68vw)'
+                      } else {
+                          item.style.transform = 'none'
+                      }
+                  });
+              }, animationTime * 1000)
+          }
+      }
+      imgListOne.style.transition = animationTime + 's ease'
+  }
+
+  //节流函数
+  function throttle(fn, delay) {
+      return function () {
+          if (timer) {
+              return
+          }
+          fn.apply(this, arguments)
+          timer = setTimeout(() => {
+              timer = null
+          }, delay)
+      }
+  }
+
+  nextBtn.onclick = throttle(() => cilckFun('next'), animationTime * 1000);
+
+  lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);
+
+  // 添加鼠标滚轮事件
+  imgListOne.addEventListener('wheel', throttle((event) => {
+      if (event.deltaY < 0) {
+          cilckFun('last');
+      } else {
+          cilckFun('next');
+      }
+  }, animationTime * 1000));
+</script>
+
+    
+  </div>
+
+  <!-- 引入 Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script>
+    document.getElementById('language-toggle').addEventListener('click', function() {
+      const currentLang = this.getAttribute('data-default-lang');
+      const newLang = currentLang === 'zh' ? 'en' : 'zh'; // 切换语言
+      this.setAttribute('data-default-lang', newLang);
+      loadLanguage(newLang);
+    });
+
+    function loadLanguage(lang) {
+      const language = lang === 'en' ? 'en' : 'zh';
+      fetch(`/static/js/lang/${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+          document.querySelectorAll('[i18n]').forEach(element => {
+            const key = element.getAttribute('i18n');
+            if (data[key]) {
+              element.textContent = data[key];
+            }
+          });
+        })
+        .catch(error => console.error('Error loading language file:', error));
+    }
+
+    // Load default language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const defaultLang = document.getElementById('language-toggle').getAttribute('data-default-lang');
+      loadLanguage(defaultLang);
+    });
+  </script>
+</body>
+</html>
