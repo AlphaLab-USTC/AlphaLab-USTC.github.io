@@ -157,12 +157,24 @@ body {
 .info-container {
     flex: 1 1 auto;
 }
+
 .person-name {
     font-size: 24px;
     color: #37ac9a;
     font-weight: bold;
     margin: 0 0 10px;
+    /* display: flex;            同一行排列姓名与起始时间 */
+    align-items: baseline;    /* 基线对齐更自然 */
+    gap: 8px;                 /* 姓名与时间的间距 */
 }
+
+.person-name .start-time {
+    font-size: 14px;  /* 更小字号 */
+    color: #888;      /* 更淡颜色 */
+    margin: 0;        /* 去掉段落默认上下间距，避免行高被拉开 */
+}
+
+
 .position {
     font-size: 16px;
     color: #555;

@@ -29,9 +29,14 @@ section.gallery { padding-top: calc(var(--navbar-height) + 16px); }
               box-shadow .48s ease;
   will-change: flex-basis, transform;
   background: #f6f8fa;
+  display: flex;
+  flex-direction: column; /* 图片在上，标题在下 */
 }
 .gallery-item img {
-  width: 100%; height: 100%; display: block; object-fit: cover;
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  object-fit: cover;
 }
 
 /* 放大 = 横跨两列（公式对 4/3/2 列都正确）*/
@@ -45,14 +50,12 @@ section.gallery { padding-top: calc(var(--navbar-height) + 16px); }
 
 /* 标题浮层 */
 .gallery-item .info {
-  position: absolute; inset: 0; display: flex; align-items: end;
+  position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: flex-start;
   padding: 10px 12px; pointer-events: none;
   background: linear-gradient(to top, rgba(0,0,0,.35), transparent 60%);
-  opacity: 0; transition: opacity .2s ease; color: #fff; font-weight: 600;
+  opacity: 1; color: #fff; font-weight: 600;
   text-shadow: 0 1px 2px rgba(0,0,0,.35);
 }
-.gallery-item.expanded .info,
-.gallery-item:hover .info { opacity: 1; }
 
 /* 响应式列数 */
 @media (max-width: 1024px) { :root { --cols: 3; } }
