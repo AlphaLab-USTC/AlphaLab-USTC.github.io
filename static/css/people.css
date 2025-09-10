@@ -188,7 +188,10 @@
     margin-bottom: 0;
 }
 .info-container {
-    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .person-name {
     color: #37ac9a;
@@ -229,7 +232,9 @@
     vertical-align: middle;
     margin-right: 5px;
 }
-.achievements, .highlights {
+.achievements, 
+.highlights {
+    width: 100%;
     margin-top: 10px;
 }
 .achievements h3, .highlights h3 {
