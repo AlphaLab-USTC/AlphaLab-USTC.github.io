@@ -1,8 +1,10 @@
 
 .carousel-item {
-    height: 100vh; /* 可自行调整 */
+    height: 100vh; /* 与窗口高度一致 */
+    width: 100vw; /* 与窗口宽度一致 */
     min-height: 400px;
     position: relative;
+    overflow: hidden; /* 确保图片不会溢出 */
   }
   .news-more-link {
     width: 100%;
@@ -11,19 +13,18 @@
   .news-more-link a {
     width: 100%;
   }
-  /* 让图片自适应铺满 */
+  /* 让图片宽度与窗口一致，高度与窗口一致，显示上半部分 */
   .carousel-item img {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    object-position: top; /* 显示图片上半部分 */
+    height: 100vh;
+    width: 100vw;
     transition: transform 0.5s ease;
-    filter: blur(1px);
-    border-radius: 10px;
+    border-radius: 0; /* 去掉圆角以填满整个窗口 */
   }
   /* 悬停放大图片 */
   .carousel-item img:hover {
     transform: scale(1.05);
-    filter: blur(0);
   }
   /* 文字区域居中 */
   .carousel-caption {

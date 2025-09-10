@@ -16,16 +16,16 @@
 
 .advisor-card {
     display: flex;
-    flex-direction: column; /* Change to column to stack items vertically */
+    flex-direction: column; /* 纵向堆叠 */
     background-color: white;
     padding: 20px;
     /* border: 1px solid #ddd; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
-    justify-content: center; /* Center align each line */
-    text-align: center; /* Center align text */
-    width: calc(100% - 40px); /* Adjust width to fit one card per row */
+    justify-content: center; /* 居中每一行 */
+    text-align: center;
+    width: calc(100% - 40px);
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -33,6 +33,7 @@
 
 .advisor-basic-info {
     display: flex;
+    flex-direction: column; /* 纵向排列 */
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
@@ -41,9 +42,42 @@
     overflow: hidden;
 }
 
+.advisor-info-container {
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+    align-items: center;
+}
+
+.advisor-name,
+.person-name {
+    color: #37ac9a;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px; /* 减小内部标签间距 */
+}
+
+.advisor-name .en{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.advisor-name .zh {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.advisor-name .position {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
 .advisor-card .description {
-    width: 100%; /* Make description take 100% width */
-    margin-top: 20px; /* Add some space between the description and the previous element */
+    width: 100%;
+    margin-top: 20px;
     text-align: left;
 }
 
@@ -81,14 +115,14 @@
 
 .person-card {
     display: flex;
-    flex-direction: column; /* 纵向堆叠：image-container 在上，info-container 在下 */
+    flex-direction: column;
     background-color: white;
     padding: 20px;
     /* border: 1px solid #ddd; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: flex-start; /* 左对齐内容 */
-    width: calc(50% - 20px); /* 默认：两列 */
+    align-items: flex-start;
+    width: calc(50% - 20px);
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -128,9 +162,11 @@
 .image-container {
     flex: 0 0 auto;
     margin-right: 0;
-    margin-bottom: 12px; /* 与下方 info-container 留间距 */
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
+    justify-content: center; /* 横向居中 */
+    width: 100%; /* 让容器宽度撑满父容器，便于居中 */
 }
 .profile-image {
     width: 150px;
@@ -141,7 +177,7 @@
 .image-container .links {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 10px; /* 紧贴图片，右侧留少量间距 */
+    margin: 0 0 0 10px;
 }
 .image-container .links a {
     margin-right: 0;
@@ -153,29 +189,34 @@
 .info-container {
     flex: 1 1 auto;
 }
-
 .person-name {
-    font-size: 24px;
     color: #37ac9a;
     font-weight: bold;
-    margin: 0 0 10px;
-    /* display: flex;            同一行排列姓名与起始时间 */
-    align-items: baseline;    /* 基线对齐更自然 */
-    gap: 8px;                 /* 姓名与时间的间距 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px; /* 减小内部标签间距 */
+}
+
+.person-name .en {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.person-name .zh {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
 }
 
 .person-name .start-time {
-    font-size: 14px;  /* 更小字号 */
-    color: #888;      /* 更淡颜色 */
-    margin: 0;        /* 去掉段落默认上下间距，避免行高被拉开 */
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+    padding: 0;
 }
 
-
-.position {
-    font-size: 16px;
-    color: #555;
-    margin: 5px 0;
-}
 .links a {
     margin-right: 10px;
 }
@@ -213,15 +254,15 @@
         padding-bottom: calc(var(--navbar-height) + 20px);
     }
     .person-card {
-        width: calc(98%); /* 小屏幕时每行一个卡片 */
+        width: calc(98%);
     }
     
     .advisor-card {
-        width: calc(98%); /* 确保advisor卡片也是全宽 */
+        width: calc(98%);
     }
     
     .people-list {
-        gap: 15px; /* 减小间距 */
+        gap: 15px;
     }
 }
 
@@ -231,7 +272,7 @@
         padding-bottom: calc(var(--navbar-height) + 20px);
     }
     .person-card {
-        width: calc(50% - 15px); /* 两列布局 */
+        width: calc(50% - 15px);
     }
     
     .advisor-card {
@@ -245,7 +286,7 @@
         padding-top: calc(var(--navbar-height) + 20px);
     }
     .person-card {
-        width: calc(25% - 15px); /* 四列布局，结合父容器 gap 调整 */
+        width: calc(25% - 15px);
     }
 
     .advisor-card {
