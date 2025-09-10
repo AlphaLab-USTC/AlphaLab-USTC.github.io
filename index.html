@@ -92,52 +92,36 @@
 <!-- 主体内容 -->
 <div>
     
-<!-- 轮播图部分 -->
+<!-- 首页背景布局 -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/css/index.css">
 
+<div class="hero-section">
+  <!-- 上面：from2025 -->
+  <div class="hero-image top">
+    <img src="/static/images/home/from2025.png" alt="From 2025">
+  </div>
+  
 
-<div id="alphaCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#alphaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#alphaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#alphaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <!-- <img src="https://news.microsoft.com/source/wp-content/uploads/2024/12/ai-updated.jpg" class="d-block w-100" alt="Slide 1"> -->
-      <img src="/static/images/home/1.png" class="d-block w-100" alt="Slide 1">
-      <!-- <div class="carousel-caption d-none d-md-block text-white">
-        <h1>Welcome to AlphaLab</h1>
-        <p>
-          We are a team dedicated to cutting-edge research in artificial intelligence, committed to exploring the infinite possibilities of smart technology. Here, you will discover the latest scientific breakthroughs, innovative projects, and technology trends as we embark together on an exciting journey of AI exploration. 
-        </p>
-      </div> -->
+  <div class="center-row">
+    <!-- 左侧：name -->
+    <div class="hero-image left">
+      <img src="/static/images/home/name.png" alt="AlphaLab Name">
     </div>
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="https://scitechvista.nat.gov.tw/FileDownload/Article/20230330152155448044257.jpg" class="d-block w-100" alt="Slide 2">
-      <div class="carousel-caption d-none d-md-block text-white">
-        <p>In this era of rapid technological advancement, artificial intelligence is transforming our lives and work with disruptive power. We dedicate ourselves to AI research not only to challenge the boundaries of existing technology but also to explore and create limitless possibilities, addressing practical problems through intelligent algorithms and innovative solutions. Our goal is to harness AI to empower various industries, drive social progress, and create a better, more convenient future for humanity.</p>
-      </div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <img src="https://www.mercy.edu/sites/default/files/2020-07/iStock-1182604339.jpg" class="d-block w-100" alt="Slide 3">
-      <div class="carousel-caption d-none d-md-block text-white">
-        <h4>JOIN US</h4>
-        <p>we look forward to building a brilliant future together!</p>
-      </div>
+
+    <!-- 右侧：robot -->
+    <div class="hero-image right">
+      <img src="/static/images/home/robot.png" alt="Robot">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#alphaCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#alphaCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
+  
+  
+  <!-- 中间纵向：about_us 和 directions -->
+  <div class="hero-image center-vertical">
+    <img src="/static/images/home/about_us_en.png" alt="About Us" class="about-us">
+    <img src="/static/images/home/directions_en.png" alt="Directions" class="directions">
+  </div>
 </div>
 
 <!-- 新闻摘要区块：展示前三条新闻 -->

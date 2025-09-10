@@ -1,82 +1,147 @@
 
-.carousel-item {
-    height: 100vh; /* 与窗口高度一致 */
-    width: 100vw; /* 与窗口宽度一致 */
-    min-height: 400px;
-    position: relative;
-    overflow: hidden; /* 确保图片不会溢出 */
-  }
-  .news-more-link {
-    width: 100%;
-    margin: auto;
-  }
-  .news-more-link a {
-    width: 100%;
-  }
-  /* 让图片宽度与窗口一致，高度与窗口一致，显示上半部分 */
-  .carousel-item img {
-    object-fit: cover;
-    object-position: top; /* 显示图片上半部分 */
-    height: 100vh;
-    width: 100vw;
-    transition: transform 0.5s ease;
-    border-radius: 0; /* 去掉圆角以填满整个窗口 */
-  }
-  /* 悬停放大图片 */
-  .carousel-item img:hover {
-    transform: scale(1.05);
-  }
-  /* 文字区域居中 */
-  .carousel-caption {
-    /* background-color: rgba(0, 0, 0, 0.4); 让文字更明显 */
-    border-radius: 5px;
-    padding: 10px;
+/* 首页背景区域 */
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/static/images/home/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
 
+/* 通用图片容器 */
+.hero-image {
+  position: absolute;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 大屏幕布局 */
+@media (min-width: 1024px) {
+  .hero-image.top {
+    top: 5%;
+    left: 5%;
+    max-width: 30%;
+    z-index: 800;
+  }
+
+  /* 中间左侧：name */
+  .hero-image.left {
     top: 50%;
+    left: 5%;
     transform: translateY(-50%);
-    bottom: auto;
-  }
-  /* 设置文字样式及悬停放大效果 */
-  .carousel-caption h1,
-  .carousel-caption h4,
-  .carousel-caption p {
-    font-family: 'Montserrat', sans-serif;
-    transition: transform 0.5s ease;
-    font-weight: bold;
-  }
-  .carousel-caption h1 {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  .carousel-caption p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 1rem;
-  }
-  .carousel-caption:hover h1,
-  .carousel-caption:hover h4,
-  .carousel-caption:hover p {
-    transform: scale(1.1);
+    max-width: 23%;
   }
 
-  .card-title {
-    font-family: "Georgia", serif; 
-    font-size: 1.5rem; 
-    font-weight: bold; 
-    color: #333; 
-    margin-bottom: 8px;
+  /* 右侧：robot */
+  .hero-image.right {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    max-width: 16%;
   }
 
-  .card-text {
-    font-family: "Arial", sans-serif; 
-    font-size: 1rem; 
-    line-height: 1.6; 
-    color: #555; 
+  /* 中间纵向：about_us 和 directions */
+  .hero-image.center-vertical {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 35%;
   }
-  
-  /* Meet the Team 部分的样式 */
-  .meet-team-section {
-    background: #f8f9fa;
-    padding: 100px 0; 
-    text-align: center;
+}
+
+/* 小屏幕响应式布局 */
+@media (max-width: 1023px) {
+  .hero-section {
+    height: auto; /* 自适应高度 */
+    min-height: 100vh; /* 最小高度为视窗高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 改为从顶部开始排列 */
+    padding: 20px;
   }
+
+  /* 第一排：from2025 */
+  .hero-image.top {
+    position: static;
+    align-self: center;
+    max-width: 60%;
+  }
+
+  /* 第二排：center-row 容器 */
+  .center-row {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* 横向各item底部对齐 */
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  /* name 和 robot 在 center-row 内 */
+  .center-row .hero-image.left,
+  .center-row .hero-image.right {
+    position: static;
+    max-width: 50%;
+  }
+
+  /* 第三四排：about_us 和 directions */
+  .hero-image.center-vertical {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  .hero-image.center-vertical img {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+}
+
+.news-more-link {
+  width: 100%;
+  margin: auto;
+}
+.news-more-link a {
+  width: 100%;
+}
+
+.card-title {
+  font-family: "Georgia", serif; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-family: "Arial", sans-serif; 
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #555; 
+}
+
+/* Meet the Team 部分的样式 */
+.meet-team-section {
+  background: #f8f9fa;
+  padding: 100px 0; 
+  text-align: center;
+}
