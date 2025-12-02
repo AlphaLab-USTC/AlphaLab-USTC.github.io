@@ -39,8 +39,10 @@
 
 .news-image-container img {
     width: 100%;
-    /* max-width: 320px; */
-    object-fit: cover;
+    height: auto; /* 保持长宽比不变 */
+    /* 为避免竖屏图片过高撑开布局，同时完整展示图片 */
+    max-height: 320px;
+    object-fit: contain; /* 不裁剪图片，完整显示 */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
