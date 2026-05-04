@@ -1,212 +1,295 @@
-<!-- templates/base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AlphaLab</title>
-  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
-  <!-- 引入 Bootstrap 5 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlphaLab @ USTC — AI Research Group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- 导航栏 -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-
-    <a class="navbar-brand" href="/index.html">
-        <img src="/static/images/logo_.png" alt="AlphaLab Logo">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/index.html">
-            <i class="fa-solid fa-house"></i>
-            <span i18n="home">home</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/news.html">
-            <i class="fa-solid fa-newspaper"></i>
-            <span i18n="news">news</span>
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/publications.html">
-                <i class="fa-solid fa-file-alt"></i>
-                <span i18n="publications">Publications</span>
-            </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/people.html">
-            <i class="fa-solid fa-user"></i>
-            <span i18n="people">people</span>
-          </a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="/publications">Publications</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="/gallery.html">
-            <i class="fa-solid fa-images"></i>
-            <span i18n="gallery">gallery</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resources.html">
-            <i class="fa-solid fa-file-powerpoint"></i>
-            <span i18n="resources">resources</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html">
-            <i class="fa-solid fa-envelope"></i>
-            <span i18n="contact">contact</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- <div class="nav-item">
-      <div class="nav-link" id="language-toggle" data-default-lang="zh">
-        <i class="fa-solid fa-language"></i>
-      </div>
-    </div> -->
-
-  </div>
+<!-- ═══════════ NAV ═══════════ -->
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><div class="dot"></div>AlphaLab @ USTC</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="publications.html">Papers</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="people.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
 </nav>
 
-<!-- 语言切换按钮 - 固定在右下角 -->
-<div class="language-toggle-fixed" id="language-toggle" data-default-lang="en">
-  <i class="fa-solid fa-language"></i>
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="about">
+  <div class="hero-glow1"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge"><div class="hero-badge-dot"></div>Established @ USTC · 2025</div>
+    <div class="hero-logo-row">
+      <img src="images/logo_.png" alt="AlphaLab Logo" class="hero-logo" />
+      <!-- <div>
+        <h1 class="hero-title">AlphaLab</h1>
+        <p class="hero-sub">AI Research Group &nbsp;·&nbsp; USTC</p>
+      </div> -->
+    </div>
+    <p class="hero-tagline">
+      Exploring the frontiers of <strong>Large Language Models</strong>,
+      <strong>Multimodal AI</strong>, and <strong>Intelligent Recommendation</strong> —
+      building AI systems that are capable, aligned, and beneficial.
+    </p>
+    <div class="hero-venues">
+      <span class="venue-tag">NeurIPS</span><span class="venue-tag">ICLR</span>
+      <span class="venue-tag">ICML</span><span class="venue-tag">KDD</span>
+      <span class="venue-tag">ACL</span><span class="venue-tag">SIGIR</span>
+      <span class="venue-tag">WWW</span><span class="venue-tag">CVPR</span>
+    </div>
+    <div class="hero-btns">
+      <a href="publications.html" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Publications</a>
+      <a href="people.html" class="btn"><i class="fa-solid fa-users"></i> Our Team</a>
+      <a href="https://github.com/AlphaLab-USTC" target="_blank" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="#join" class="btn"><i class="fa-solid fa-envelope"></i> Join Us</a>
+    </div>
+  </div>
+</section>
+
+<div class="wave-wrap">
+  <svg viewBox="0 0 1440 72" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:72px;">
+    <path d="M0,36 C200,72 400,0 600,30 C800,60 1000,10 1200,36 C1320,54 1380,18 1440,36 L1440,72 L0,72 Z" fill="#f8f7ff"/>
+  </svg>
 </div>
 
-<!-- 主体内容 -->
-<div>
-    
-<!-- 首页背景布局 -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/css/index.css">
+<!-- ═══════════ CONTENT ═══════════ -->
+<div class="content">
+<div class="container">
 
-<div class="hero-section">
-  <!-- 上面：from2025 -->
-  <div class="hero-image top">
-    <img src="/static/images/home/from2025.png" alt="From 2025">
-  </div>
-  
-
-  <div class="center-row">
-    <!-- 左侧：name -->
-    <div class="hero-image left">
-      <img src="/static/images/home/name.png" alt="AlphaLab Name">
-    </div>
-
-    <!-- 右侧：robot -->
-    <div class="hero-image right">
-      <img src="/static/images/home/robot.png" alt="Robot">
-    </div>
-  </div>
-  
-  
-  <!-- 中间纵向：about_us 和 directions -->
-  <div class="hero-image center-vertical">
-    <img src="/static/images/home/about_us_en.png" alt="About Us" class="about-us">
-    <img src="/static/images/home/directions_en.png" alt="Directions" class="directions">
-  </div>
-</div>
-
-<!-- 新闻摘要区块：展示前三条新闻 -->
-<div class="container my-5">
-  <div class="news-cards-container">
-    <div class="row">
-    
-    <div class="col-md-4">
-      <div class="card mb-3">
-        <img src="/static/images/news/nips.svg" class="card-img-top" alt="NeurIPS 2025">
-        <div class="card-body">
-          <h5 class="card-title">Seven papers accepted by NeurIPS 2025</h5>
+  <!-- About — static -->
+  <section class="section reveal" id="about-section">
+    <div class="section-header"><h2 class="section-title">About AlphaLab</h2></div>
+    <div class="about-layout">
+      <div class="about-text">
+        <p><strong>AlphaLab</strong> is an AI research group at the
+          <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a>,
+          led by <span class="hl">Prof. An Zhang</span> at the School of Artificial Intelligence and Data Science (SAIDS).
+          The lab was officially established in September 2025.</p>
+        <p>We work at the frontier of <span class="hl">Foundation Models</span> — large language models and diffusion models — with a focus on
+          understanding their <strong>capabilities, reasoning, and alignment</strong>.
+          Our research bridges theoretical insights with real-world applications in
+          <span class="hl">Personalization</span>, <span class="hl">Agentic AI</span>, and <span class="hl">Trustworthy AI</span>.</p>
+        <p>We collaborate closely with leading research groups worldwide and actively publish at top-tier venues
+          including NeurIPS, ICLR, ICML, KDD, ACL, SIGIR, WWW, and CVPR.
+          We warmly welcome passionate researchers to <a href="#join">join our team</a>.</p>
+      </div>
+      <div class="about-pi">
+        <img src="images/people/anzhang.png" alt="An Zhang" />
+        <div class="pi-name">An Zhang</div>
+        <div class="pi-title">Assistant Professor, USTC</div>
+        <div class="pi-email">anzhang314@ustc.edu.cn</div>
+        <div class="pi-links">
+          <a href="https://anzhang314.github.io" target="_blank" title="Homepage"><i class="fa-solid fa-house"></i></a>
+          <a href="https://scholar.google.com.sg/citations?user=BcX7GJcAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/anzhang314" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:anzhang314@ustc.edu.cn" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
-    
-    <div class="col-md-4">
-      <div class="card mb-3">
-        <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_6.jpg" class="card-img-top" alt="AlphaLab Setup">
-        <div class="card-body">
-          <h5 class="card-title">AlphaLab Setup in USTC !!!</h5>
-        </div>
+  </section>
+
+  <!-- Research — static -->
+  <section class="section reveal" id="research">
+    <div class="section-header">
+      <h2 class="section-title">Research Directions</h2>
+      <p class="section-desc">Four core themes shaping our research agenda</p>
+    </div>
+    <div class="ri-grid">
+      <div class="ri-card">
+        <div class="ri-icon ri-icon-1"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h4>Intelligent Recommendation</h4>
+        <p>LLM and diffusion model-powered personalization and next-generation recommender systems.</p>
+        <div class="ri-tags"><span class="ri-tag">LLM as Rec</span><span class="ri-tag">GenRec</span><span class="ri-tag">Diffusion</span></div>
+      </div>
+      <div class="ri-card">
+        <div class="ri-icon ri-icon-2"><i class="fa-solid fa-robot"></i></div>
+        <h4>Agentic AI</h4>
+        <p>Autonomous AI agents with planning, memory, tool-use, and long-horizon decision-making.</p>
+        <div class="ri-tags"><span class="ri-tag">AI Agents</span><span class="ri-tag">Tool Use</span><span class="ri-tag">Memory</span></div>
+      </div>
+      <div class="ri-card">
+        <div class="ri-icon ri-icon-3"><i class="fa-solid fa-lightbulb"></i></div>
+        <h4>LLM Reasoning</h4>
+        <p>Scaling and improving complex reasoning, chain-of-thought, and self-verification in LLMs.</p>
+        <div class="ri-tags"><span class="ri-tag">Chain-of-Thought</span><span class="ri-tag">RAG</span><span class="ri-tag">Scaling</span></div>
+      </div>
+      <div class="ri-card">
+        <div class="ri-icon ri-icon-4"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4>Trustworthy AI</h4>
+        <p>LLM safety, alignment, and robustness for reliable real-world AI deployment.</p>
+        <div class="ri-tags"><span class="ri-tag">Safety</span><span class="ri-tag">Alignment</span><span class="ri-tag">Robustness</span></div>
       </div>
     </div>
-    
-    <div class="col-md-4">
-      <div class="card mb-3">
-        <img src="/static/images/news/202508_urbancup.png" class="card-img-top" alt="UrbanCup 2025">
-        <div class="card-body">
-          <h5 class="card-title">2nd place in UrbanCup 2025</h5>
-        </div>
+  </section>
+
+  <!-- Publications — rendered from data/publications.json (selected only) -->
+  <section class="section reveal" id="publications">
+    <div class="section-header">
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="section-desc">Representative recent work — <a href="publications.html">view all →</a></p>
+    </div>
+    <div id="idx-pub-grid" class="pub-grid">
+      <p style="color:#94a3b8;padding:1rem 0">Loading…</p>
+    </div>
+  </section>
+
+  <!-- News — rendered from data/news.json (first 3) -->
+  <section class="section reveal" id="news">
+    <div class="section-header">
+      <h2 class="section-title">News</h2>
+      <p class="section-desc"><a href="news.html">all news →</a></p>
+    </div>
+    <ul id="idx-news-list" class="news-list">
+      <li style="text-align:center;padding:1rem;color:#94a3b8;list-style:none">Loading…</li>
+    </ul>
+  </section>
+
+  <!-- Team — rendered from data/people.json -->
+  <section class="section reveal" id="team">
+    <div class="section-header">
+      <h2 class="section-title">Our Team</h2>
+      <p class="section-desc">Meet the people behind AlphaLab — <a href="people.html">full profiles →</a></p>
+    </div>
+    <div id="idx-team-scroll" class="team-scroll"></div>
+  </section>
+
+  <!-- Join Us — static -->
+  <section class="section reveal" id="join">
+    <div class="join-box">
+      <h3>🚀 Join AlphaLab</h3>
+      <p>We are actively looking for <strong>PhD students</strong>, <strong>Master's students</strong>,
+        and <strong>research interns</strong> who are passionate about AI research.
+        We offer a vibrant research environment, close mentorship, and access to top-tier computing resources.</p>
+      <p style="margin-top:10px;">Interested? Please send your CV and a brief research statement to
+        <a href="mailto:anzhang314@ustc.edu.cn">anzhang314@ustc.edu.cn</a>
+        with the subject line <strong>"[Application] [Your Name]"</strong>.</p>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<footer>
+  <p>© 2025 AlphaLab @ USTC · School of AI and Data Science</p>
+  <p style="margin-top:4px;">
+    <a href="https://anzhang314.github.io" target="_blank">PI Homepage</a> ·
+    <a href="https://github.com/AlphaLab-USTC" target="_blank">GitHub</a> ·
+    <a href="mailto:anzhang314@ustc.edu.cn">Contact</a>
+  </p>
+</footer>
+
+<script>
+// ── scroll reveal
+const ro = new IntersectionObserver(
+  es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }),
+  { threshold: 0.08 }
+);
+function initReveal() { document.querySelectorAll('.reveal:not(.visible)').forEach(el => ro.observe(el)); }
+
+// ── active nav on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + cur) a.classList.add('active');
+  });
+}, { passive: true });
+
+// ── render helpers
+const VENUE_BADGE = { NeurIPS:'badge-neurips', ICML:'badge-icml', ICLR:'badge-iclr', KDD:'badge-kdd', SIGIR:'badge-sigir', WWW:'badge-www' };
+
+function pubCardHtml(p) {
+  const badgeCls = VENUE_BADGE[p.venue] || 'badge-neurips';
+  const vLabel   = p.venue + ' ' + p.year + (p.note ? ' ' + p.note : '');
+  const imgStyle = p.gradient ? ` style="background:${p.gradient}"` : '';
+  const imgHtml  = p.image
+    ? `<img src="${p.image}" alt="${p.title}" />`
+    : `<div class="pub-img-placeholder">${p.placeholder}</div>`;
+  const authors  = p.authors.map(a => a.me ? `<span class="me">${a.name}</span>` : a.name).join(', ');
+  const links    = p.links.map(l => `<a href="${l.url}" target="_blank" class="pub-link"><i class="${l.icon}"></i> ${l.label}</a>`).join('');
+  return `
+    <div class="pub-card">
+      <div class="pub-img"${imgStyle}>${imgHtml}<span class="pub-venue-badge ${badgeCls}">${vLabel}</span></div>
+      <div class="pub-body">
+        <div class="pub-title"><a href="${p.links[0]?.url||'#'}" target="_blank">${p.title}</a></div>
+        <div class="pub-authors">${authors}</div>
+        <div class="pub-links">${links}</div>
       </div>
-    </div>
-    
-    </div>
-  </div>
-  <!-- "Learn more" 链接，跳转到完整新闻页面 -->
-  <div class="text-center news-more-link">
-    <a href="/news.html" class="btn btn-primary btn-lg" style="background-color: rgba(141, 219, 233, 0.8); border-color: rgba(141, 219, 233, 0.8); color: rgb(19, 104, 117);">Learn more</a>
-  </div>
-</div>
+    </div>`;
+}
 
-<!-- Meet the Team 部分 -->
-<div class="meet-team-section">
-  <div class="container">
-    <a href="/people.html" class="btn btn-primary btn-lg" style="background-color: #37ac9a; border-color: #37ac9a; color: #fff;">Meet the Team</a>
-  </div>
-</div>
+function newsItemHtml(n) {
+  const papers = (n.papers||[]).length
+    ? `<div class="news-papers">${n.papers.map(p=>`<a href="${p.url}" target="_blank">${p.title}</a>`).join('')}</div>`
+    : '';
+  return `
+    <li class="news-item">
+      <span class="news-date">${n.date}</span>
+      <div class="news-body">
+        <div class="news-title">${n.title}</div>
+        ${n.desc ? `<div class="news-desc">${n.desc}</div>` : ''}
+        ${papers}
+      </div>
+    </li>`;
+}
 
+function teamScrollHtml(pi, phd, master) {
+  const piCard = `
+    <div class="team-card team-card-pi-scroll">
+      <img src="${pi.photo}" alt="${pi.name}" class="team-photo" />
+      <div class="team-name">${pi.name}</div>
+      <div class="team-role">Principal Investigator</div>
+    </div>`;
+  const sep = role => `<div class="team-scroll-sep"><span>${role}</span></div>`;
+  const card = (m, role) => `
+    <div class="team-card">
+      <img src="${m.photo}" alt="${m.name}" class="team-photo" />
+      <div class="team-name">${m.name}</div>
+      <div class="team-role">${role}</div>
+    </div>`;
+  return piCard
+    + sep('PhD')
+    + phd.map(m => card(m, 'PhD')).join('')
+    + sep('Master')
+    + master.map(m => card(m, 'Master')).join('');
+}
 
-    
-    
-  </div>
+// ── fetch all data in parallel
+Promise.all([
+  fetch('data/publications.json').then(r => r.json()),
+  fetch('data/news.json').then(r => r.json()),
+  fetch('data/people.json').then(r => r.json()),
+]).then(([pubs, news, people]) => {
+  // Publications: selected items only
+  document.getElementById('idx-pub-grid').innerHTML =
+    pubs.filter(p => p.selected).map(pubCardHtml).join('');
 
-  <!-- 引入 Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/static/js/main.js"></script>
-  <script>
-    document.getElementById('language-toggle').addEventListener('click', function() {
-      const currentLang = this.getAttribute('data-default-lang');
-      const newLang = currentLang === 'zh' ? 'en' : 'zh'; // 切换语言
-      this.setAttribute('data-default-lang', newLang);
-      loadLanguage(newLang);
-    });
+  // News: first 3 items
+  document.getElementById('idx-news-list').innerHTML =
+    news.slice(0, 3).map(newsItemHtml).join('');
 
-    function loadLanguage(lang) {
-      const language = lang === 'en' ? 'en' : 'zh';
-      fetch(`/static/js/lang/${language}.json`)
-        .then(response => response.json())
-        .then(data => {
-          document.querySelectorAll('[i18n]').forEach(element => {
-            const key = element.getAttribute('i18n');
-            if (data[key]) {
-              element.textContent = data[key];
-            }
-          });
-        })
-        .catch(error => console.error('Error loading language file:', error));
-    }
+  // Team — single scrollable row
+  document.getElementById('idx-team-scroll').innerHTML = teamScrollHtml(people.pi, people.phd, people.master);
 
-    // Load default language on page load
-    document.addEventListener('DOMContentLoaded', function() {
-      const defaultLang = document.getElementById('language-toggle').getAttribute('data-default-lang');
-      loadLanguage(defaultLang);
-    });
-  </script>
+  initReveal();
+}).catch(err => {
+  console.error('Failed to load data:', err);
+});
+</script>
 </body>
 </html>

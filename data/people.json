@@ -1,0 +1,175 @@
+{
+  "pi": {
+    "name": "An Zhang",
+    "name_cn": "张岸",
+    "photo": "images/people/anzhang.png",
+    "position": "Assistant Professor",
+    "affiliation": "School of AI and Data Science (SAIDS), USTC",
+    "email": "anzhang314@ustc.edu.cn",
+    "bio": "Prof. An Zhang received his PhD from the National University of Singapore (NUS). His research focuses on large language models, intelligent recommendation systems, and trustworthy AI. He has published extensively at top venues including NeurIPS, ICLR, ICML, KDD, SIGIR, WWW, and CVPR.",
+    "links": [
+      { "label": "Homepage",       "icon": "fa-solid fa-house",       "url": "https://anzhang314.github.io" },
+      { "label": "Google Scholar", "icon": "ai ai-google-scholar",    "url": "https://scholar.google.com.sg/citations?user=BcX7GJcAAAAJ" },
+      { "label": "GitHub",         "icon": "fa-brands fa-github",     "url": "https://github.com/anzhang314" },
+      { "label": "Email",          "icon": "fa-solid fa-envelope",    "url": "mailto:anzhang314@ustc.edu.cn" }
+    ]
+  },
+  "phd": [
+    {
+      "name": "Yaorui Shi",
+      "photo": "images/people/shiyaorui.jpg",
+      "interests": ["LLM Reasoning", "RAG", "Retrieval"],
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://syr-cn.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=EWU3rdIAAAAJ&hl=en" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/syr-cn/" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:yaoruishi@gmail.com" }
+      ]
+    },
+    {
+      "name": "Yingzhi He",
+      "photo": "images/people/heyingzhi.png",
+      "interests": ["Sequential Rec", "LLM Embeddings"],
+      "links": [
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=zyfCE90AAAAJ&hl=en" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/HappyPointer" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:heyingzhi@u.nus.edu" }
+      ]
+    },
+    {
+      "name": "Leheng Sheng",
+      "photo": "images/people/shengleheng.png",
+      "interests": ["LLM for Rec", "Alignment"],
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://lehengthu.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=j4ZcRakAAAAJ&hl=zh-CN" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/LehengTHU" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:lehengsheng0418@gmail.com" }
+      ]
+    },
+    {
+      "name": "Jingnan Zheng",
+      "photo": "images/people/zhengjingnan.png",
+      "interests": ["LLM Safety", "Alignment"],
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://sophiezheng998.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=UlgiSa0AAAAJ&hl=en" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/SophieZheng998" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:jingnan.zheng@u.nus.edu" }
+      ]
+    },
+    {
+      "name": "Yuxin Chen",
+      "photo": "images/people/chenyuxin.png",
+      "interests": ["LLM", "Vision-Language"],
+      "links": [
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=krdkLawAAAAJ&hl=en" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/chenyuxin1999" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:yuxin.chen@u.nus.edu" }
+      ]
+    },
+    {
+      "name": "Chenhang Cui",
+      "photo": "images/people/cuichenhang.png",
+      "interests": ["VLM Safety", "Preference Modeling"],
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://gzcch.github.io" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=V5X1gdAAAAAJ" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/gzcch" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:chenhangcui@gmail.com" }
+      ]
+    },
+    {
+      "name": "Guoqing Hu",
+      "photo": "images/people/huguoqing.png",
+      "interests": ["Recommendation", "ID-Language"],
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://hugo-chinn.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=GnDEWVoAAAAJ&hl=zh-CN" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/Hugo-Chinn/" }
+      ]
+    },
+    {
+      "name": "Zijing Wu",
+      "photo": "images/people/wuzijing.png",
+      "interests": ["AI Agents", "Recommendation"],
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/edenwu" },
+        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:edenwu@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Liu Shuo",
+      "photo": "images/people/liushuo.png",
+      "interests": ["Diffusion Models", "GenRec"],
+      "links": [
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/lswhim" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:lswhim2000@gmail.com" }
+      ]
+    }
+  ],
+  "master": [
+    {
+      "name": "Yanzhen Luo",
+      "photo": "images/people/luoyanzhen.jpg",
+      "links": []
+    },
+    {
+      "name": "Du Lin",
+      "photo": "images/people/lindu.jpg",
+      "links": []
+    },
+    {
+      "name": "Zhengzhou Cai",
+      "photo": "images/people/caizhengzhou.png",
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://conctsai.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=SeryawsAAAAJ&hl=zh-CN" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/conctsai" }
+      ]
+    },
+    {
+      "name": "Changshuo Shen",
+      "photo": "images/people/shenchangshuo.png",
+      "links": [
+        { "label": "Homepage",       "icon": "fa-solid fa-house",    "url": "https://changshuoshen.github.io/" },
+        { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=nRmy4fgAAAAJ" },
+        { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/ChangshuoShen" },
+        { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:stephen_shen@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Junfei Tan",
+      "photo": "images/people/tanjunfei.png",
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/sober-clever" },
+        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:sober_clever@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Yi Zhang",
+      "photo": "images/people/zhangyi.png",
+      "links": [
+        { "label": "Homepage", "icon": "fa-solid fa-house",    "url": "https://zy20031230.github.io/" },
+        { "label": "GitHub",   "icon": "fa-brands fa-github",  "url": "https://github.com/zy20031230" },
+        { "label": "Email",    "icon": "fa-solid fa-envelope", "url": "mailto:zy1230@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Yan Sun",
+      "photo": "images/people/sunyan.jpg",
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:sy2371443995@gmail.com" }
+      ]
+    },
+    {
+      "name": "Peisen Zheng",
+      "photo": "images/people/zhengpeisen.jpg",
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/baconPSZheng" },
+        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:zhengpeisen180@gmail.com" }
+      ]
+    }
+  ]
+}

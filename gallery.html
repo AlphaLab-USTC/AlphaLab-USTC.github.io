@@ -1,331 +1,170 @@
-<!-- templates/base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AlphaLab</title>
-  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
-  <!-- 引入 Bootstrap 5 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — AlphaLab @ USTC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 12px; aspect-ratio: 4/3; cursor: pointer; background: #e9e3f8; }
+    .gallery-item img { width:100%; height:100%; object-fit:cover; transition: transform 0.35s ease; display:block; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-caption { position:absolute; bottom:0; left:0; right:0; padding:24px 12px 8px; background:linear-gradient(transparent,rgba(10,5,26,.75)); color:#fff; font-size:.72rem; font-weight:500; opacity:0; transition:opacity .25s; }
+    .gallery-item:hover .gallery-caption { opacity:1; }
+    /* lightbox */
+    .lightbox { display:none; position:fixed; inset:0; z-index:1000; background:rgba(5,2,15,.92); backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:2rem; }
+    .lightbox.open { display:flex; }
+    #lb-img { max-width:min(90vw,960px); max-height:80vh; border-radius:12px; object-fit:contain; box-shadow:0 24px 60px rgba(0,0,0,.5); }
+    #lb-caption { position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.7); font-size:.85rem; background:rgba(255,255,255,.07); border-radius:20px; padding:5px 16px; white-space:nowrap; }
+    #lb-close { position:absolute; top:1.2rem; right:1.5rem; color:rgba(255,255,255,.65); background:rgba(255,255,255,.08); border:none; border-radius:50%; width:36px; height:36px; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .18s; }
+    #lb-close:hover { color:#fff; background:rgba(124,58,237,.5); }
+    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); background:rgba(255,255,255,.1); border:none; color:#fff; font-size:1.4rem; width:44px; height:44px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .18s; backdrop-filter:blur(8px); }
+    .lb-nav:hover { background:rgba(124,58,237,.5); }
+    #lb-prev { left:1.2rem; }
+    #lb-next { right:1.2rem; }
+    @media (max-width:700px) { .gallery-grid { grid-template-columns:repeat(2,1fr); } .lb-nav { display:none; } }
+    @media (max-width:420px) { .gallery-grid { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
 
-<!-- 导航栏 -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-
-    <a class="navbar-brand" href="/index.html">
-        <img src="/static/images/logo_.png" alt="AlphaLab Logo">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/index.html">
-            <i class="fa-solid fa-house"></i>
-            <span i18n="home">home</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/news.html">
-            <i class="fa-solid fa-newspaper"></i>
-            <span i18n="news">news</span>
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/publications.html">
-                <i class="fa-solid fa-file-alt"></i>
-                <span i18n="publications">Publications</span>
-            </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/people.html">
-            <i class="fa-solid fa-user"></i>
-            <span i18n="people">people</span>
-          </a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="/publications">Publications</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="/gallery.html">
-            <i class="fa-solid fa-images"></i>
-            <span i18n="gallery">gallery</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resources.html">
-            <i class="fa-solid fa-file-powerpoint"></i>
-            <span i18n="resources">resources</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html">
-            <i class="fa-solid fa-envelope"></i>
-            <span i18n="contact">contact</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- <div class="nav-item">
-      <div class="nav-link" id="language-toggle" data-default-lang="zh">
-        <i class="fa-solid fa-language"></i>
-      </div>
-    </div> -->
-
-  </div>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><div class="dot"></div>AlphaLab @ USTC</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="publications.html">Papers</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="people.html">Team</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+  </ul>
 </nav>
-  
-  <!-- 语言切换按钮 - 固定在右下角 -->
-  <div class="language-toggle-fixed" id="language-toggle" data-default-lang="en">
-    <i class="fa-solid fa-language"></i>
-  </div>
 
-  <!-- 主体内容 -->
-  <div>
-    
-<link rel="stylesheet" href="/static/css/gallery.css">
-
-<section class="gallery container">
-  <div class="page-title">
-    <h1 i18n="gallery">GALLERY</h1>
-  </div>
-
-  <div class="gallery-grid">
-    
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_1.jpg" alt="2025.09 USTC AlphaLab Setup -1">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_2.jpg" alt="2025.09 USTC AlphaLab Setup -2">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_3.jpg" alt="2025.09 USTC AlphaLab Setup -3">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_4.jpg" alt="2025.09 USTC AlphaLab Setup -1">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_5.jpg" alt="2025.09 USTC AlphaLab Setup -2">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.09_USTC_AlphaLabSetup_6.jpg" alt="2025.09 USTC AlphaLab Setup -3">
-      <figcaption class="info"><p>2025.09 USTC AlphaLab Setup</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.08_bali_1.jpg" alt="2025.08 Bali -1">
-      <figcaption class="info"><p>2025.08 Bali</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.08_bali_2.jpg" alt="2025.08 Bali -2">
-      <figcaption class="info"><p>2025.08 Bali</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.08_bali_3.jpg" alt="2025.08 Bali -3">
-      <figcaption class="info"><p>2025.08 Bali</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.4.29_WWW2025_tutorial.jpg" alt="2025.04 WWW 2025 Tutorial">
-      <figcaption class="info"><p>2025.04 WWW 2025 Tutorial</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.4.13_China.png" alt="2025.04.13 G+Kitchen">
-      <figcaption class="info"><p>2025.04.13 China</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.4._Singapore_ICLR25_2.jpg" alt="2025.04 Singapore ICLR25 -2">
-      <figcaption class="info"><p>2025.04 Singapore ICLR25</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2025.4_Singapore_ICLR25_1.jpg" alt="2025.04 Singapore ICLR25 -1">
-      <figcaption class="info"><p>2025.04 Singapore ICLR25</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12.31_Singapore.jpg" alt="2024.12.31 Singapore">
-      <figcaption class="info"><p>2024.12.31 Singapore</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12_Canada_NIPS24_2.jpg" alt="2024.12 Canada, NIPS24 -2">
-      <figcaption class="info"><p>2024.12 Canada, NIPS24</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12_Canada_NIPS24_1.jpg" alt="2024.12 Canada, NIPS24 -1">
-      <figcaption class="info"><p>2024.12 Canada, NIPS24</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12_NeurIPS_2.jpg" alt="2024.12 NeurIPS -2">
-      <figcaption class="info"><p>2024.12 NeurIPS</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12_NeurIPS.jpg" alt="2024.12 NeurIPS">
-      <figcaption class="info"><p>2024.12 NeurIPS</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.12_Canada_Vancouver.jpg" alt="2024.12 Canada, Vancouver">
-      <figcaption class="info"><p>2024.12 Canada, Vancouver</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.10_Indonesia_2.jpg" alt="2024.10 Indonesia -2">
-      <figcaption class="info"><p>2024.10 Indonesia</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.10_Indonesia.jpg" alt="2024.10 Indonesia">
-      <figcaption class="info"><p>2024.10 Indonesia</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2024.09_NUS.jpg" alt="2024.09 NUS">
-      <figcaption class="info"><p>2024.09 NUS</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2023.12.31.jpg" alt="2023.12.31">
-      <figcaption class="info"><p>2023.12.31</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2023.11_NUS.jpg" alt="2023.11 NUS">
-      <figcaption class="info"><p>2023.11 NUS</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2023.10_Malaysia_Langkawi_2.jpg" alt="2023.10 Malaysia, Langkawi -2">
-      <figcaption class="info"><p>2023.10 Malaysia, Langkawi</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2023.10_Malaysia_Langkawi.jpg" alt="2023.10 Malaysia, Langkawi">
-      <figcaption class="info"><p>2023.10 Malaysia, Langkawi</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2023.08_NUS_Utown.jpg" alt="2023.08 NUS Utown">
-      <figcaption class="info"><p>2023.08 NUS Utown</p></figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="/static/images/gallery/2022.08_Singapore.jpg" alt="2022.08 Singapore">
-      <figcaption class="info"><p>2022.08 Singapore</p></figcaption>
-    </figure>
-
-
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <a href="index.html" class="page-hero-breadcrumb">← Home</a>
+    <h1 class="page-hero-title">Gallery</h1>
+    <p class="page-hero-sub">Lab life, conferences &amp; adventures</p>
   </div>
 </section>
-  
-    
-  <!-- </div> -->
 
-  <!-- 引入 Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/static/js/main.js"></script>
+<div class="wave-wrap">
+  <svg viewBox="0 0 1440 72" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:72px;">
+    <path d="M0,36 C200,72 400,0 600,30 C800,60 1000,10 1200,36 C1320,54 1380,18 1440,36 L1440,72 L0,72 Z" fill="#f8f7ff"/>
+  </svg>
+</div>
 
+<div class="content">
+<div class="container">
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Gallery</h2>
+      <p id="photo-count" class="section-desc">Loading…</p>
+    </div>
 
-  <script>
-    // 放大数量固定为1
-    (() => {
-      const grid = document.querySelector('.gallery-grid');
-      if (!grid) return;
-    
-      const items = Array.from(grid.querySelectorAll('.gallery-item'));
-      const candidates = items.filter((_, idx) => ((idx + 1) % 4) !== 0);
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="lab-life">Lab Life</button>
+      <button class="filter-btn" data-cat="conferences">Conferences</button>
+      <button class="filter-btn" data-cat="trips">Trips &amp; Outings</button>
+    </div>
 
-      const EXPANDED_COUNT = 1;   // 每轮只放大1个
-      const CYCLE_MS     = 6000; // 放慢节奏：轮换间隔（毫秒）
-    
-      let timer = null;
-    
-      function clearExpanded() {
-        candidates.forEach(el => el.classList.remove('expanded'));
-      }
-    
-      function sampleOne(arr) {
-        if (arr.length === 0) return [];
-        const idx = Math.floor(Math.random() * arr.length);
-        return [arr[idx]];
-      }
-    
-      function tick() {
-        clearExpanded();
-        // 过滤掉第 4、8、12... 个（1-based 可被 4 整除）
-        const chosen = sampleOne(candidates);
-        // 同帧批量应用，减少回流
-        requestAnimationFrame(() => chosen.forEach(el => el.classList.add('expanded')));
-      }
-    
-      function start() { stop(); tick(); timer = setInterval(tick, CYCLE_MS); }
-      function stop()  { if (timer) clearInterval(timer), timer = null; }
-    
-      // 页签隐藏时暂停，返回时恢复
-      document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
-      // 窗口尺寸变化时重启一轮（适配列数变化）
-      window.addEventListener('resize', () => { stop(); start(); });
-    
-      start();
-    })();
-  </script>
+    <div id="gallery-grid" class="gallery-grid"></div>
+  </section>
+</div>
+</div>
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button id="lb-close">✕</button>
+  <button class="lb-nav" id="lb-prev">&#8249;</button>
+  <img id="lb-img" src="" alt="" />
+  <button class="lb-nav" id="lb-next">&#8250;</button>
+  <div id="lb-caption"></div>
+</div>
 
-  <script>
-    document.getElementById('language-toggle').addEventListener('click', function() {
-      const currentLang = this.getAttribute('data-default-lang');
-      const newLang = currentLang === 'zh' ? 'en' : 'zh'; // 切换语言
-      this.setAttribute('data-default-lang', newLang);
-      loadLanguage(newLang);
-    });
+<footer>
+  <p>© 2025 AlphaLab @ USTC · School of AI and Data Science</p>
+  <p style="margin-top:4px;">
+    <a href="https://anzhang314.github.io" target="_blank">PI Homepage</a> ·
+    <a href="https://github.com/AlphaLab-USTC" target="_blank">GitHub</a> ·
+    <a href="mailto:anzhang314@ustc.edu.cn">Contact</a>
+  </p>
+</footer>
 
-    function loadLanguage(lang) {
-      const language = lang === 'en' ? 'en' : 'zh';
-      fetch(`/static/js/lang/${language}.json`)
-        .then(response => response.json())
-        .then(data => {
-          document.querySelectorAll('[i18n]').forEach(element => {
-            const key = element.getAttribute('i18n');
-            if (data[key]) {
-              element.textContent = data[key];
-            }
-          });
-        })
-        .catch(error => console.error('Error loading language file:', error));
-    }
+<script>
+// ── scroll reveal
+const ro = new IntersectionObserver(
+  es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } }),
+  { threshold: 0.05 }
+);
+function initReveal() { document.querySelectorAll('.reveal:not(.visible)').forEach(el => ro.observe(el)); }
 
-    // Load default language on page load
-    document.addEventListener('DOMContentLoaded', function() {
-      const defaultLang = document.getElementById('language-toggle').getAttribute('data-default-lang');
-      loadLanguage(defaultLang);
-    });
-  </script>
+// ── gallery
+let allPhotos = [];
+let visiblePhotos = [];
+let currentIdx = 0;
+
+function galleryItemHtml(p, idx) {
+  return `
+    <div class="gallery-item" data-cat="${p.category}" data-idx="${idx}">
+      <img src="images/gallery/${p.file}" alt="${p.caption}" loading="lazy" />
+      <div class="gallery-caption">${p.caption}</div>
+    </div>`;
+}
+
+function render(photos) {
+  visiblePhotos = photos;
+  document.getElementById('gallery-grid').innerHTML = photos.map((p, i) => galleryItemHtml(p, i)).join('');
+  document.getElementById('photo-count').textContent = `${photos.length} photo${photos.length !== 1 ? 's' : ''}`;
+  document.querySelectorAll('.gallery-item').forEach((el, i) => {
+    el.addEventListener('click', () => openLightbox(i));
+  });
+}
+
+// ── filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    render(cat === 'all' ? allPhotos : allPhotos.filter(p => p.category === cat));
+  });
+});
+
+// ── lightbox
+function openLightbox(idx) {
+  currentIdx = idx;
+  const p = visiblePhotos[idx];
+  document.getElementById('lb-img').src       = 'images/gallery/' + p.file;
+  document.getElementById('lb-caption').textContent = p.caption;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+function prevPhoto()     { openLightbox((currentIdx - 1 + visiblePhotos.length) % visiblePhotos.length); }
+function nextPhoto()     { openLightbox((currentIdx + 1) % visiblePhotos.length); }
+
+document.getElementById('lb-close').addEventListener('click', closeLightbox);
+document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); prevPhoto(); });
+document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); nextPhoto(); });
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLightbox();
+  if (e.key === 'ArrowLeft')   prevPhoto();
+  if (e.key === 'ArrowRight')  nextPhoto();
+});
+
+// ── fetch
+fetch('data/gallery.json')
+  .then(r => r.json())
+  .then(data => { allPhotos = data; render(data); })
+  .catch(() => {
+    document.getElementById('gallery-grid').innerHTML =
+      '<p style="text-align:center;padding:2rem;color:#ef4444">Failed to load.</p>';
+  });
+</script>
 </body>
 </html>

@@ -1,0 +1,495 @@
+[
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "MemOCR: Layout-Aware Visual Memory for Efficient Long-Horizon Reasoning",
+    "authors": [
+      { "name": "Yaorui Shi", "me": true },
+      { "name": "Shugui Liu" },
+      { "name": "Yu Yang" },
+      { "name": "Wenyu Mao" },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Qi Gu" },
+      { "name": "Hui Su" },
+      { "name": "Xunliang Cai" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%)",
+    "placeholder": "MemOCR",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "Tiny Brains, Giant Impact: Uncovering the Keystone Neurons of LLM with Just a Few Prompts",
+    "authors": [
+      { "name": "Xiangtian Ji", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Zhengzhou Cai" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #14532d 0%, #16a34a 100%)",
+    "placeholder": "Tiny Brains",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "When to Memorize and When to Stop: Gated Recurrent Memory for Long-Context Reasoning",
+    "authors": [
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Zhang Yongtao" },
+      { "name": "Wenchang Ma" },
+      { "name": "Yaorui Shi", "me": true },
+      { "name": "Ting Huang" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Ke Shen" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%)",
+    "placeholder": "GatedMemory",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "Transport and Merge: Cross-Architecture Merging for Large Language Models",
+    "authors": [
+      { "name": "Chenhang Cui", "me": true },
+      { "name": "Binyun Yang" },
+      { "name": "Fei Shen" },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Jingnan Zheng", "me": true },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #7c2d12 0%, #ea580c 100%)",
+    "placeholder": "T&M",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "Reasoning Can Be Restored by Correcting a Few Decision Tokens",
+    "authors": [
+      { "name": "Changshuo Shen", "me": true },
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #164e63 0%, #0891b2 100%)",
+    "placeholder": "DecisionTokens",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "Internalizing Safety Understanding in Large Reasoning Models via Verification",
+    "authors": [
+      { "name": "Yi Zhang", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Dongcheng Zhang" },
+      { "name": "Chaochao Lu" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #831843 0%, #db2777 100%)",
+    "placeholder": "SafeReason",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "Learning to Self-Verify Makes Language Models Better Reasoners",
+    "authors": [
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Yu Wang" },
+      { "name": "Yi Zhang", "me": true },
+      { "name": "Ziang Ye" },
+      { "name": "Zhengzhou Cai" },
+      { "name": "Yaorui Shi", "me": true },
+      { "name": "Qi Gu" },
+      { "name": "Hui Su" },
+      { "name": "Xunliang Cai" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #365314 0%, #65a30d 100%)",
+    "placeholder": "Self-Verify",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICML",
+    "year": 2026,
+    "note": null,
+    "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition",
+    "authors": [
+      { "name": "Ruipeng Wang", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Yukai Wang" },
+      { "name": "Chang Wu" },
+      { "name": "Junfeng Fang" },
+      { "name": "Xiaodong Cai" },
+      { "name": "Qi Gu" },
+      { "name": "Hui Su" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Xiang Wang" },
+      { "name": "Xunliang Cai" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #1c1917 0%, #57534e 100%)",
+    "placeholder": "AgentNoise",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "#" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICLR",
+    "year": 2026,
+    "note": null,
+    "title": "AlphaSteer: Learning Refusal Steering with Principled Null-Space Constraint",
+    "authors": [
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Changshuo Shen", "me": true },
+      { "name": "Weixiang Zhao" },
+      { "name": "Junfeng Fang" },
+      { "name": "Xiaohao Liu", "me": true },
+      { "name": "Zhenkai Liang" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)",
+    "placeholder": "AlphaSteer",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2506.07022" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICLR",
+    "year": 2026,
+    "note": null,
+    "title": "AlphaAlign: Incentivizing Safety Alignment with Extremely Simplified Reinforcement Learning",
+    "authors": [
+      { "name": "Yi Zhang", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "XiuYu Zhang" },
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Zhenkai Liang" },
+      { "name": "Xiang Wang" }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #1e3a8a 0%, #6d28d9 100%)",
+    "placeholder": "AlphaAlign",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2507.14987" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICLR",
+    "year": 2026,
+    "note": null,
+    "title": "Look Back to Reason Forward: Revisitable Memory for Long-Context LLM Agents",
+    "authors": [
+      { "name": "Yaorui Shi", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Siyuan Wang" },
+      { "name": "Sihang Li" },
+      { "name": "Hengxing Cai" },
+      { "name": "Qi Gu" },
+      { "name": "Xiang Wang" },
+      { "name": "An Zhang", "me": true }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg, #1e3a8a 0%, #0e7490 100%)",
+    "placeholder": "RevisitMem",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2509.23040" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "ICLR",
+    "year": 2025,
+    "note": "Oral",
+    "title": "Language Representations Can be What Recommenders Need: Findings and Potentials",
+    "authors": [
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "Yi Zhang" },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "Xiang Wang" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": "images/publications/alpharec.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2407.05441" },
+      { "label": "Code",  "icon": "fa-brands fa-github",  "url": "https://github.com/LehengTHU/AlphaRec" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICLR",
+    "year": 2025,
+    "note": null,
+    "title": "Preference Diffusion for Recommendation",
+    "authors": [
+      { "name": "Shuo Liu", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "Guoqing Hu", "me": true },
+      { "name": "Hong Qian" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": "images/publications/diff4rec.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2410.13117" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "ICLR",
+    "year": 2025,
+    "note": null,
+    "title": "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+    "authors": [
+      { "name": "Chenhang Cui", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "Yiyang Zhou" },
+      { "name": "Zhaorun Chen" },
+      { "name": "Gelei Deng" },
+      { "name": "Huaxiu Yao" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": "images/publications/iclr.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2410.14148" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "KDD",
+    "year": 2025,
+    "note": null,
+    "title": "LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation",
+    "authors": [
+      { "name": "Yingzhi He", "me": true },
+      { "name": "Xiaohao Liu" },
+      { "name": "An Zhang", "me": true },
+      { "name": "Yunshan Ma" },
+      { "name": "Tat-Seng Chua" }
+    ],
+    "image": "images/publications/llm2rec.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://dl.acm.org/doi/10.1145/3711896.3737029" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "SIGIR",
+    "year": 2025,
+    "note": null,
+    "title": "AlphaFuse: Learn ID Embeddings for Sequential Recommendation in Null Space of Language Embeddings",
+    "authors": [
+      { "name": "Guoqing Hu", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "Shuo Liu", "me": true },
+      { "name": "Zhibo Cai" },
+      { "name": "Xun Yang" },
+      { "name": "Xiang Wang" }
+    ],
+    "image": "images/publications/alphafuse.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://dl.acm.org/doi/10.1145/3726302.3729894" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": null,
+    "title": "The Emergence of Abstract Thought in Large Language Models Beyond Any Language",
+    "authors": [
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#7c2d12,#dc2626)",
+    "placeholder": "Abstract<br>Thought",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2506.09890" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": null,
+    "title": "Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs",
+    "authors": [
+      { "name": "Yaorui Shi", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#1e3a8a,#3b82f6)",
+    "placeholder": "Search<br>&amp; Refine",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2505.11277" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": null,
+    "title": "RSafe: Incentivizing Proactive Reasoning to Build Robust and Adaptive LLM Safeguards",
+    "authors": [
+      { "name": "Jingnan Zheng", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#065f46,#059669)",
+    "placeholder": "RSafe",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2506.07736" }
+    ],
+    "selected": true
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": null,
+    "title": "On Reasoning Strength Planning in Large Reasoning Models",
+    "authors": [
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#1e40af,#6366f1)",
+    "placeholder": "Reasoning<br>Strength",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2506.08390" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": null,
+    "title": "Safe + Safe = Unsafe? Exploring How Safe Images Can Be Exploited to Jailbreak Large Vision-Language Models",
+    "authors": [
+      { "name": "Chenhang Cui", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#be123c,#e11d48)",
+    "placeholder": "Safe+Safe<br>=Unsafe?",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2411.11496" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "NeurIPS",
+    "year": 2025,
+    "note": "D&B",
+    "title": "AgentRecBench: Benchmarking LLM Agent-based Personalized Recommender Systems",
+    "authors": [
+      { "name": "Zijing Wu", "me": true },
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "An Zhang", "me": true },
+      { "name": "et al." }
+    ],
+    "image": null,
+    "gradient": "linear-gradient(135deg,#5b21b6,#8b5cf6)",
+    "placeholder": "AgentRec<br>Bench",
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://arxiv.org/abs/2505.19623" }
+    ],
+    "selected": false
+  },
+  {
+    "venue": "WWW",
+    "year": 2025,
+    "note": null,
+    "title": "Personalized Recommendation Agents with Self-Consistency",
+    "authors": [
+      { "name": "Zijing Wu", "me": true },
+      { "name": "Leheng Sheng", "me": true },
+      { "name": "Yuanlin Xia" },
+      { "name": "Yi Zhang", "me": true },
+      { "name": "Yuxin Chen", "me": true },
+      { "name": "An Zhang", "me": true }
+    ],
+    "image": "images/publications/202505_www.png",
+    "gradient": null,
+    "placeholder": null,
+    "links": [
+      { "label": "Paper", "icon": "fa-solid fa-file-pdf", "url": "https://dl.acm.org/doi/10.1145/3701716.3719229" }
+    ],
+    "selected": false
+  }
+]

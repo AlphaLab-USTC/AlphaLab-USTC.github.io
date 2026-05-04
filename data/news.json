@@ -1,0 +1,152 @@
+[
+  {
+    "date": "2026.05",
+    "year": 2026,
+    "title": "🎉 Eight papers accepted at ICML 2026",
+    "image": "images/news/icml.svg",
+    "desc": "Congrats to Yuxin Chen, Yaorui Shi, Xiangtian Ji, Leheng Sheng, Chenhang Cui, Changshuo Shen, Yi Zhang, and Ruipeng Wang!",
+    "papers": [
+      { "title": "MemOCR: Layout-Aware Visual Memory for Efficient Long-Horizon Reasoning", "url": "#" },
+      { "title": "Tiny Brains, Giant Impact: Uncovering the Keystone Neurons of LLM with Just a Few Prompts", "url": "#" },
+      { "title": "When to Memorize and When to Stop: Gated Recurrent Memory for Long-Context Reasoning", "url": "#" },
+      { "title": "Transport and Merge: Cross-Architecture Merging for Large Language Models", "url": "#" },
+      { "title": "Reasoning Can Be Restored by Correcting a Few Decision Tokens", "url": "#" },
+      { "title": "Internalizing Safety Understanding in Large Reasoning Models via Verification", "url": "#" },
+      { "title": "Learning to Self-Verify Makes Language Models Better Reasoners", "url": "#" },
+      { "title": "AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition", "url": "#" }
+    ]
+  },
+  {
+    "date": "2026.01",
+    "year": 2026,
+    "title": "📄 Three papers accepted at ICLR 2026",
+    "image": "images/news/iclr.png",
+    "desc": "Congrats to Leheng Sheng, Yi Zhang, and Yaorui Shi!",
+    "papers": [
+      { "title": "AlphaSteer: Learning Refusal Steering with Principled Null-Space Constraint", "url": "https://arxiv.org/abs/2506.07022" },
+      { "title": "AlphaAlign: Incentivizing Safety Alignment with Extremely Simplified Reinforcement Learning", "url": "https://arxiv.org/abs/2507.14987" },
+      { "title": "Look Back to Reason Forward: Revisitable Memory for Long-Context LLM Agents", "url": "https://arxiv.org/abs/2509.23040" }
+    ]
+  },
+  {
+    "date": "2025.12",
+    "year": 2025,
+    "title": "Talk: The RL and Inference Scaling for Reasoning and Agents",
+    "image": "images/news/20251224_zhenyuhou.png",
+    "desc": "Guest talk by Zhenyu Hou (PhD @ Tsinghua KEG Lab). Covers how to scale RL for language models to improve complex reasoning and unlock inference-scaling capabilities. Recording: <a href='https://meeting.tencent.com/crm/NbDjVBk90d' target='_blank'>link</a>",
+    "papers": []
+  },
+  {
+    "date": "2025.12",
+    "year": 2025,
+    "title": "Talk: Expanding the Expressiveness of Semantic IDs for Generative Recommendation",
+    "image": "images/news/20251217_yupenghou.png",
+    "desc": "Guest talk by Yupeng Hou (PhD candidate @ UC San Diego, advised by Prof. Julian McAuley). Discusses extending semantic IDs from short to long forms (KDD'25) and moving to personalized semantic IDs. Recording: <a href='https://meeting.tencent.com/crm/l5LzooV5ed' target='_blank'>link</a>",
+    "papers": []
+  },
+  {
+    "date": "2025.12",
+    "year": 2025,
+    "title": "Talk: Towards World Models from Generative Spatial Intelligence",
+    "image": "images/news/20251212_fangfuliu.png",
+    "desc": "Guest talk by Fangfu Liu (PhD @ Tsinghua EE, advised by Prof. Qifeng Chen). Explores learning unified world models from visual signals supporting generation, spatial reasoning, and causal inference.",
+    "papers": []
+  },
+  {
+    "date": "2025.12",
+    "year": 2025,
+    "title": "Talk: Enhancing Large Language Models via Internal Supervision",
+    "image": "images/news/20251202_weixiangzhao.png",
+    "desc": "Guest talk by Weixiang Zhao (PhD @ HIT SCIR). Introduces mining internal supervision signals to enhance LLMs, reducing reliance on costly external data, covering multilingual capability, safety alignment, and reasoning efficiency. Recording: <a href='https://meeting.tencent.com/crm/2YRQomkeef' target='_blank'>link</a>",
+    "papers": []
+  },
+  {
+    "date": "2025.11",
+    "year": 2025,
+    "title": "🎉 Seven papers accepted at NeurIPS 2025",
+    "image": "images/news/nips.svg",
+    "desc": "6 Main Track + 1 Datasets & Benchmarks. Congrats to Yuxin Chen, Yaorui Shi, Jingnan Zheng, Leheng Sheng, Chenhang Cui, and Guoqing Hu!",
+    "papers": [
+      { "title": "The Emergence of Abstract Thought in LLMs Beyond Any Language", "url": "https://arxiv.org/abs/2506.09890" },
+      { "title": "Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning", "url": "https://arxiv.org/abs/2505.11277" },
+      { "title": "RSafe: Incentivizing Proactive Reasoning for Robust LLM Safeguards", "url": "https://arxiv.org/abs/2506.07736" },
+      { "title": "On Reasoning Strength Planning in Large Reasoning Models", "url": "https://arxiv.org/abs/2506.08390" },
+      { "title": "Safe + Safe = Unsafe? Jailbreaking Large Vision-Language Models", "url": "https://arxiv.org/abs/2411.11496" },
+      { "title": "AgentRecBench: Benchmarking LLM Agent-based Personalized Recommender Systems", "url": "https://arxiv.org/abs/2505.19623" }
+    ]
+  },
+  {
+    "date": "2025.09",
+    "year": 2025,
+    "title": "🏫 AlphaLab officially established at USTC!",
+    "image": "images/gallery/2025.09_USTC_AlphaLabSetup_6.jpg",
+    "desc": "We look forward to exploring the infinite possibilities of intelligent technology together! Members: An Zhang, Yaorui Shi, Yan Sun, Zijing Wu, Yi Zhang, Du Lin, Peisen Zheng, Yanzhen Luo, Changshuo Shen.",
+    "papers": []
+  },
+  {
+    "date": "2025.08",
+    "year": 2025,
+    "title": "🏆 2nd place at UrbanCup 2025",
+    "image": "images/news/202508_urbancup.png",
+    "desc": "Urban Life Simulation with LLM Agents. Congrats to Peisen Zheng, Yan Sun, Yuxin Chen, Leheng Sheng, and Yingzhi He!",
+    "papers": []
+  },
+  {
+    "date": "2025.05",
+    "year": 2025,
+    "title": "📄 Three papers accepted at ACL 2025",
+    "image": "images/news/acl.png",
+    "desc": "Congrats to Chenhang Cui, Leheng Sheng, and Liu Shuo!",
+    "papers": []
+  },
+  {
+    "date": "2025.05",
+    "year": 2025,
+    "title": "🥈 2nd place at AgentSociety Challenge @ WWW 2025",
+    "image": "images/news/202505_www.png",
+    "desc": "Personalized Recommendation Agents with Self-Consistency. Congrats to Zijing Wu, Leheng Sheng, Yuanlin Xia, Yi Zhang, and Yuxin Chen!",
+    "papers": [
+      { "title": "Personalized Recommendation Agents with Self-Consistency", "url": "https://dl.acm.org/doi/10.1145/3701716.3719229" }
+    ]
+  },
+  {
+    "date": "2025.04",
+    "year": 2025,
+    "title": "🎤 Tutorial at WWW 2025, Singapore",
+    "image": "images/news/www2025-tutorial.jpg",
+    "desc": "Prof. An Zhang presented a tutorial on LLMs for Recommendation at The Web Conference 2025.",
+    "papers": []
+  },
+  {
+    "date": "2025.01",
+    "year": 2025,
+    "title": "📄 AlphaFuse accepted at SIGIR 2025",
+    "image": "images/news/sigir-hgq.png",
+    "desc": "Congrats to Guoqing Hu! AlphaFuse: Learn ID Embeddings for Sequential Recommendation in Null Space of Language Embeddings.",
+    "papers": [
+      { "title": "AlphaFuse: Learn ID Embeddings for Sequential Recommendation in Null Space of Language Embeddings", "url": "https://dl.acm.org/doi/10.1145/3726302.3729894" }
+    ]
+  },
+  {
+    "date": "2025.01",
+    "year": 2025,
+    "title": "📄 Three papers accepted at ICLR 2025 (incl. 1 Oral)",
+    "image": "images/news/iclr.png",
+    "desc": "Congrats to Chenhang Cui, Leheng Sheng, and Liu Shuo!",
+    "papers": [
+      { "title": "AlphaRec: Language Representations Can be What Recommenders Need (Oral)", "url": "https://arxiv.org/abs/2407.05441" },
+      { "title": "Fine-Grained Verifiers: Preference Modeling in Vision-Language Alignment", "url": "https://arxiv.org/abs/2410.14148" },
+      { "title": "Preference Diffusion for Recommendation", "url": "https://arxiv.org/abs/2410.13117" }
+    ]
+  },
+  {
+    "date": "2025.01",
+    "year": 2025,
+    "title": "📄 LLM2Rec accepted at KDD 2025",
+    "image": "images/news/sigkdd.jpg",
+    "desc": "Congrats to Yingzhi He and Xiaohao Liu!",
+    "papers": [
+      { "title": "LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation", "url": "https://dl.acm.org/doi/10.1145/3711896.3737029" }
+    ]
+  }
+]
