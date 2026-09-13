@@ -3,10 +3,10 @@
     "name": "An Zhang",
     "name_cn": "张岸",
     "photo": "images/people/anzhang.png",
-    "position": "Assistant Professor",
+    "position": "Professor",
     "affiliation": "School of AI and Data Science (SAIDS), USTC",
     "email": "anzhang314@ustc.edu.cn",
-    "bio": "Prof. An Zhang received his PhD from the National University of Singapore (NUS). His research focuses on large language models, intelligent recommendation systems, and trustworthy AI. He has published extensively at top venues including NeurIPS, ICLR, ICML, KDD, SIGIR, WWW, and CVPR.",
+    "bio": "Prof. An Zhang received her PhD from the National University of Singapore (NUS). Her research focuses on large language models, intelligent recommendation systems, and trustworthy AI. She has published extensively at top venues including NeurIPS, ICLR, ICML, KDD, SIGIR, WWW, and CVPR.",
     "links": [
       { "label": "Homepage",       "icon": "fa-solid fa-house",       "url": "https://anzhang314.github.io" },
       { "label": "Google Scholar", "icon": "ai ai-google-scholar",    "url": "https://scholar.google.com.sg/citations?user=BcX7GJcAAAAJ" },
