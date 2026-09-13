@@ -90,15 +90,6 @@
       ]
     },
     {
-      "name": "Zijing Wu",
-      "photo": "images/people/wuzijing.png",
-      "interests": ["AI Agents", "Recommendation"],
-      "links": [
-        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/edenwu" },
-        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:edenwu@mail.ustc.edu.cn" }
-      ]
-    },
-    {
       "name": "Liu Shuo",
       "photo": "images/people/liushuo.png",
       "interests": ["Diffusion Models", "GenRec"],
@@ -170,6 +161,15 @@
         { "label": "Homepage", "icon": "fa-solid fa-house",    "url": "https://zy20031230.github.io/" },
         { "label": "GitHub",   "icon": "fa-brands fa-github",  "url": "https://github.com/zy20031230" },
         { "label": "Email",    "icon": "fa-solid fa-envelope", "url": "mailto:zy1230@mail.ustc.edu.cn" }
+      ]
+    },
+        {
+      "name": "Zijing Wu",
+      "photo": "images/people/wuzijing.png",
+      "interests": ["AI Agents", "Recommendation"],
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/edenwu" },
+        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:edenwu@mail.ustc.edu.cn" }
       ]
     },
     {
