@@ -109,27 +109,11 @@
       ]
     },
     {
-      "name": "Kong Xiaoyu",
-      "photo": "images/people/kongxiaoyu.png",
-      "interests": ["Generative Recommendation", "LLM for Rec"],
-      "links": [
-        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:925238839@qq.com" }
-      ]
-    },
-    {
       "name": "Zhang Shuyi",
       "photo": "images/people/zhangshuyi.png",
       "interests": ["LLM Safety", "Reward Modeling"],
       "links": [
         { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:shuyizhang@mail.ustc.edu.cn" }
-      ]
-    },
-    {
-      "name": "Zhang Dongcheng",
-      "photo": "images/people/zhangdongcheng.png",
-      "interests": ["LLM Safety", "Reasoning"],
-      "links": [
-        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:zhangdongcheng@pjlab.org.cn" }
       ]
     },
     {
