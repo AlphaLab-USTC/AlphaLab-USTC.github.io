@@ -107,6 +107,38 @@
         { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/lswhim" },
         { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:lswhim2000@gmail.com" }
       ]
+    },
+    {
+      "name": "Kong Xiaoyu",
+      "photo": "images/people/kongxiaoyu.png",
+      "interests": ["Generative Recommendation", "LLM for Rec"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:925238839@qq.com" }
+      ]
+    },
+    {
+      "name": "Zhang Shuyi",
+      "photo": "images/people/zhangshuyi.png",
+      "interests": ["LLM Safety", "Reward Modeling"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:shuyizhang@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Zhang Dongcheng",
+      "photo": "images/people/zhangdongcheng.png",
+      "interests": ["LLM Safety", "Reasoning"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:zhangdongcheng@pjlab.org.cn" }
+      ]
+    },
+    {
+      "name": "Zhang Lihan",
+      "photo": "images/people/zhanglihan.png",
+      "interests": ["Multimodal Generation", "Multimodal Agents"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:Zzzlihan@outlook.com" }
+      ]
     }
   ],
   "master": [
@@ -169,6 +201,95 @@
       "links": [
         { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/baconPSZheng" },
         { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:zhengpeisen180@gmail.com" }
+      ]
+    },
+    {
+      "name": "Chen Yuyao",
+      "photo": "images/people/chenyuyao.png",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:1376545402@qq.com" }
+      ]
+    },
+    {
+      "name": "Zhang Yanye",
+      "photo": "images/people/zhangyanye.jpg",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:yanyezhang7@gmail.com" }
+      ]
+    },
+    {
+      "name": "Zhao Yunke",
+      "photo": "images/people/zhaoyunke.png",
+      "interests": ["Federated Learning", "Privacy"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:1990314710@qq.com" }
+      ]
+    },
+    {
+      "name": "Guo Zehao",
+      "photo": "images/people/guozehao.png",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:3436068481@qq.com" }
+      ]
+    },
+    {
+      "name": "Ding Mingfei",
+      "photo": "images/people/dingmingfei.jpg",
+      "interests": [],
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/DMF-01" },
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:1964458896@qq.com" }
+      ]
+    },
+    {
+      "name": "Xu Zeyu",
+      "photo": "images/people/xuzeyu.png",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:xuzeyu@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Mi Yapeng",
+      "photo": "images/people/miyapeng.png",
+      "interests": ["Multimodal Generation", "Multimodal Agents"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:miyapeng78@gamil.com" }
+      ]
+    },
+    {
+      "name": "Ma Siran",
+      "photo": "images/people/masiran.png",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:masiran@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Hu Wentao",
+      "photo": "images/people/huwentao.png",
+      "interests": ["LLM Interpretability"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:wentaohu2005@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Ye Shenghao",
+      "photo": "images/people/yeshenghao.png",
+      "interests": [],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:yeshenghao@mail.ustc.edu.cn" }
+      ]
+    },
+    {
+      "name": "Liu Shugui",
+      "photo": "images/people/liushugui.png",
+      "interests": ["Generative Recommendation", "Recommendation Agents"],
+      "links": [
+        { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:lsg20060426@mail.ustc.edu.cn" }
       ]
     }
   ]
