@@ -189,7 +189,7 @@
     },
     {
       "name": "Chen Yuyao",
-      "photo": "images/people/chenyuyao.png",
+      "photo": "images/people/chenyuyao.jpg",
       "interests": [],
       "links": [
         { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:1376545402@qq.com" }
@@ -246,7 +246,7 @@
     },
     {
       "name": "Ma Siran",
-      "photo": "images/people/masiran.png",
+      "photo": "images/people/masiran.jpb",
       "interests": [],
       "links": [
         { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:masiran@mail.ustc.edu.cn" }
