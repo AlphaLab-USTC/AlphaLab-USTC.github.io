@@ -90,6 +90,14 @@
       ]
     },
     {
+      "name": "Junfei Tan",
+      "photo": "images/people/tanjunfei.png",
+      "links": [
+        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/sober-clever" },
+        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:sober_clever@mail.ustc.edu.cn" }
+      ]
+    },
+    {
       "name": "Liu Shuo",
       "photo": "images/people/liushuo.png",
       "interests": ["Diffusion Models", "GenRec"],
@@ -144,14 +152,6 @@
         { "label": "Google Scholar", "icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=nRmy4fgAAAAJ" },
         { "label": "GitHub",         "icon": "fa-brands fa-github",  "url": "https://github.com/ChangshuoShen" },
         { "label": "Email",          "icon": "fa-solid fa-envelope", "url": "mailto:stephen_shen@mail.ustc.edu.cn" }
-      ]
-    },
-    {
-      "name": "Junfei Tan",
-      "photo": "images/people/tanjunfei.png",
-      "links": [
-        { "label": "GitHub",  "icon": "fa-brands fa-github",  "url": "https://github.com/sober-clever" },
-        { "label": "Email",   "icon": "fa-solid fa-envelope", "url": "mailto:sober_clever@mail.ustc.edu.cn" }
       ]
     },
     {
