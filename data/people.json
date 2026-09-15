@@ -109,7 +109,7 @@
     },
     {
       "name": "Zhang Lihan",
-      "photo": "images/people/zhanglihan.png",
+      "photo": "images/people/zhanglihan.jpg",
       "interests": ["Multimodal Generation", "Multimodal Agents"],
       "links": [
         { "label": "Email", "icon": "fa-solid fa-envelope", "url": "mailto:Zzzlihan@outlook.com" }
